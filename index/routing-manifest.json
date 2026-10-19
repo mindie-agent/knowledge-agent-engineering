@@ -1,0 +1,172 @@
+{
+  "build_elapsed_ms": 0.7770420052111149,
+  "closure": {
+    "unit-superpowers-claim-evidence-scope": [],
+    "unit-superpowers-parallel-investigation-independence": [],
+    "unit-superpowers-review-request-git-range": []
+  },
+  "digest": "011f11e922474b3f395095c228e608d623d40be463dfb464402651138fcf145f",
+  "generation": "8d6c718adbfeb4efa01dcca4a5640fa0d2ef147434d1bc40da25c7b9f56301d6",
+  "id_path": {
+    "unit-superpowers-claim-evidence-scope": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
+    "unit-superpowers-parallel-investigation-independence": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
+    "unit-superpowers-review-request-git-range": "engineering/review/unit-superpowers-review-request-git-range.md"
+  },
+  "query_budget_excludes_build": true,
+  "schema_version": "mindie-routing-manifest/1",
+  "token_estimator": "utf8_bytes_div_4_ceiling",
+  "unit_count": 3,
+  "units": [
+    {
+      "category": "sop",
+      "closure_digest": "sha256:4cb034b2ee89db19c0f62aaa5cd0fa342273c135f5bb58da553ff7c7a8d65033",
+      "conditions": {
+        "repository": "obra/superpowers",
+        "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
+      },
+      "content_digest": "sha256:4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
+      "content_sha256": "4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
+      "domain_path": "engineering/verification",
+      "evidence_strength": "single_observation",
+      "id": "unit-superpowers-claim-evidence-scope",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/unit-superpowers-claim-evidence-scope-review.json",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L18-L38",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L40-L50",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L65-L74",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L78-L106",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L108-L125"
+        ],
+        "source_digest": "4f54912ea0f00ffac1e0d479b58ea6a0d55461d77fe832a5db46b3405703d992",
+        "source_locator": "docs/evidence/unit-superpowers-claim-evidence-scope-review.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Match completion claims to observable evidence and its scope",
+      "token_estimate": 837,
+      "triggers": {
+        "error_signatures": [],
+        "keywords": [
+          "superpowers",
+          "match",
+          "completion",
+          "claims",
+          "to",
+          "observable",
+          "evidence",
+          "and",
+          "its",
+          "scope"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "closure_digest": "sha256:9c157f42801fbc5ccdb79d466302bf11b273be3a1e5e80d9a985b02dd049c9c2",
+      "conditions": {
+        "repository": "obra/superpowers",
+        "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
+      },
+      "content_digest": "sha256:c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
+      "content_sha256": "c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
+      "domain_path": "engineering/parallelism",
+      "evidence_strength": "single_observation",
+      "id": "unit-superpowers-parallel-investigation-independence",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/unit-superpowers-parallel-investigation-independence-review.json",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L2-L3",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L10-L14",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L18-L45",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L49-L89",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L98-L109",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L126-L131",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L151-L182"
+        ],
+        "source_digest": "75a09478e9f1b5ed0be52574284e18169f600d4d689cfb15ed454dc6e7568485",
+        "source_locator": "docs/evidence/unit-superpowers-parallel-investigation-independence-review.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Partition parallel investigations by independence and shared resources",
+      "token_estimate": 946,
+      "triggers": {
+        "error_signatures": [],
+        "keywords": [
+          "superpowers",
+          "partition",
+          "parallel",
+          "investigations",
+          "by",
+          "independence",
+          "and",
+          "shared",
+          "resources"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "closure_digest": "sha256:6492c81d191d81f29c2b917fb125a21d51cedad0da99107bfb29db70af515764",
+      "conditions": {
+        "repository": "obra/superpowers",
+        "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
+      },
+      "content_digest": "sha256:9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
+      "content_sha256": "9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
+      "domain_path": "engineering/review",
+      "evidence_strength": "single_observation",
+      "id": "unit-superpowers-review-request-git-range",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "engineering/review/unit-superpowers-review-request-git-range.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/unit-superpowers-review-request-git-range-review.json",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/SKILL.md#L8-L22",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/SKILL.md#L26-L47",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/SKILL.md#L77-L103",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/code-reviewer.md#L3-L28",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/code-reviewer.md#L30-L61",
+          "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/requesting-code-review/code-reviewer.md#L63-L108"
+        ],
+        "source_digest": "a08177afb82ad96fb9459beb5b53ec0c8a446ef9a4bd585277bffcee2b72e432",
+        "source_locator": "docs/evidence/unit-superpowers-review-request-git-range-review.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Bind a review request to a work product and explicit Git range",
+      "token_estimate": 863,
+      "triggers": {
+        "error_signatures": [],
+        "keywords": [
+          "superpowers",
+          "bind",
+          "a",
+          "review",
+          "request",
+          "to",
+          "work",
+          "product",
+          "and",
+          "explicit",
+          "git",
+          "range"
+        ]
+      }
+    }
+  ]
+}

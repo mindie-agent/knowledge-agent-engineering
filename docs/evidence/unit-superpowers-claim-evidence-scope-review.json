@@ -1,0 +1,91 @@
+{
+  "index": 2,
+  "decision": "accept_with_editorial_rewrite",
+  "domain": "agent-engineering",
+  "level": "L2",
+  "title": "Match completion claims to observable evidence and its scope",
+  "mechanism": "The pinned verification skill describes a five-step reporting gate: identify evidence for a particular claim, run the relevant verification, read the output and exit status, compare the result with the claim, then report success or the actual failure with that evidence. Its claim table distinguishes a lint result from a build, a changed file from a fixed symptom, a passing test from requirements coverage, and an agent's statement from independently inspected changes. These are evidence-category distinctions. The source supplies no automated gate, freshness state machine, compliance measurement or proof that any one command establishes general correctness.",
+  "corrections": [
+    "Correct the gate citations: identify29, run30, read31, verify32, failure/success branches33-34, and claim35; earlier candidates shifted these by one line.",
+    "The document literally demands a fresh full command in the current message and says partial checks prove nothing. Report that as source wording, not a universal engineering fact: a scoped check can support a scoped claim, and unrelated repeated suites do not strengthen it.",
+    "An observed exit0 is evidence about the command that ran, not by itself proof of complete requirements, correct environment or absence of untested defects.",
+    "The VCS-diff requirement in delegated-work examples is useful for code changes; do not turn it into a universal completion oracle for read-only, remote or non-code tasks.",
+    "Remove assertions about unseen earlier candidate time-pressure wording. The '24 failure memories' are unaudited narrative evidence and establish no defect-reduction, cost or productivity effect."
+  ],
+  "source_scope": "The complete four admitted source files across this three-record packet were read at the pinned Git revision. Scope is prescriptive text interpretation; no native tool execution or efficacy test was performed.",
+  "supporting_ranges": [
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "line_start": 18,
+      "line_end": 38,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "range_sha256": "36a8ec24e89c18258f754e5863f94df245cf87b02790601dd07c190ecb20c928",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/verification-before-completion/SKILL.md:0-4201"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L18-L38"
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "line_start": 40,
+      "line_end": 50,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "range_sha256": "4e9519819078d31277bd13e9aa4a6d75198def8b318c02de5ca4d19b827e9461",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/verification-before-completion/SKILL.md:0-4201"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L40-L50"
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "line_start": 65,
+      "line_end": 74,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "range_sha256": "e8c9c252c9dc870c7fc0371d1593bc0d2082da714ffe9b625e41f5fd10e2dc27",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/verification-before-completion/SKILL.md:0-4201"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L65-L74"
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "line_start": 78,
+      "line_end": 106,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "range_sha256": "87508a1df237eeab5eec8e39d524f663beed27d076a5e025bf2a38c7668f97bd",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/verification-before-completion/SKILL.md:0-4201"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L78-L106"
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "line_start": 108,
+      "line_end": 125,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "range_sha256": "6d712d6d476b89acf7828ddebb5fb4e95d71d87da1ec2e7424bda7e36559e33d",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/verification-before-completion/SKILL.md:0-4201"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/verification-before-completion/SKILL.md#L108-L125"
+    }
+  ],
+  "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+  "accepted_body_sha256": "b26d75f815f6f8da1335981551c8c84b87027c363d0a8e3af612c51fbb711572",
+  "adoption_boundary": "Reuse the distinction between a claim and the evidence required to support it. Preserve failed and unobserved outcomes, but follow current project policy for test scope and avoid repeating verification solely because a new message is being written.",
+  "schema_version": "mindie-reviewed-source-record/1",
+  "source_repository": "obra/superpowers",
+  "editorial_packet_sha256": "02a40bf21867a833873b526b9293be948cc4334b1f97d03bf8e989865fd17752",
+  "evidence_strength": "single_observation",
+  "execution": "not_performed",
+  "original_artifact_sha256": {
+    "original_review_output": "67aa8552eea51500f810d53d02914f9a34d6de3e76b316c9f1cf956c147f0f3b",
+    "original_receipt": "596fc9f95176ffdbbb486e5adac0fe14d1e7a3b565b55c650ff62efcb568d05a",
+    "original_admission": "0792f41cac6ffb68f42baae5e07c52549fe642ef1ac141bef4ef4d12aa7b7c6b"
+  }
+}

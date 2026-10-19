@@ -1,0 +1,161 @@
+{
+  "closure": {
+    "unit-superpowers-claim-evidence-scope": [],
+    "unit-superpowers-parallel-investigation-independence": [],
+    "unit-superpowers-review-request-git-range": []
+  },
+  "digest": "52e918c9d1ccbc196560baeda8937fdf7c4e34f3761224295bfff84ad3256ec4",
+  "federation": {
+    "corpus": {
+      "automatic": false,
+      "bytes": 15930,
+      "estimated_tokens": 2646,
+      "kind": "federation",
+      "path": ".",
+      "unit_ids": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-superpowers-parallel-investigation-independence",
+        "unit-superpowers-review-request-git-range"
+      ],
+      "units": 3
+    },
+    "domains": [
+      {
+        "automatic": false,
+        "bytes": 15930,
+        "estimated_tokens": 2646,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "engineering",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-superpowers-claim-evidence-scope",
+          "unit-superpowers-parallel-investigation-independence",
+          "unit-superpowers-review-request-git-range"
+        ],
+        "units": 3
+      }
+    ]
+  },
+  "index_build_elapsed_ms": 0.7770420052111149,
+  "index_digest": "011f11e922474b3f395095c228e608d623d40be463dfb464402651138fcf145f",
+  "leaves": [
+    {
+      "automatic": false,
+      "bytes": 5737,
+      "estimated_tokens": 946,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/parallelism",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5213,
+      "estimated_tokens": 863,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/review",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-superpowers-review-request-git-range"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4980,
+      "estimated_tokens": 837,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/verification",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "units": 1
+    }
+  ],
+  "schema": "mindie-shard-topology/1",
+  "two_level_subtrees": [
+    {
+      "automatic": false,
+      "bytes": 5737,
+      "estimated_tokens": 946,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/parallelism",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5213,
+      "estimated_tokens": 863,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/review",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-superpowers-review-request-git-range"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4980,
+      "estimated_tokens": 837,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/verification",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "units": 1
+    }
+  ],
+  "unit_count": 3,
+  "units": {
+    "unit-superpowers-claim-evidence-scope": {
+      "bytes": 4980,
+      "category": "sop",
+      "content_sha256": "4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
+      "domain_path": "engineering/verification",
+      "estimated_tokens": 837,
+      "evidence_strength": "single_observation",
+      "inherits_from": [],
+      "path": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
+      "tier": "L2"
+    },
+    "unit-superpowers-parallel-investigation-independence": {
+      "bytes": 5737,
+      "category": "sop",
+      "content_sha256": "c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
+      "domain_path": "engineering/parallelism",
+      "estimated_tokens": 946,
+      "evidence_strength": "single_observation",
+      "inherits_from": [],
+      "path": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
+      "tier": "L2"
+    },
+    "unit-superpowers-review-request-git-range": {
+      "bytes": 5213,
+      "category": "sop",
+      "content_sha256": "9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
+      "domain_path": "engineering/review",
+      "estimated_tokens": 863,
+      "evidence_strength": "single_observation",
+      "inherits_from": [],
+      "path": "engineering/review/unit-superpowers-review-request-git-range.md",
+      "tier": "L2"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "index": 1,
+  "decision": "accept_with_editorial_rewrite",
+  "domain": "agent-engineering",
+  "level": "L2",
+  "title": "Partition parallel investigations by independence and shared resources",
+  "mechanism": "The Superpowers document first separates unrelated problems from coupled failures, then checks whether shared state makes concurrent work interfere. Its task brief gives each investigator a narrow scope, goal, edit constraints and required return summary. After workers return, the coordinator reviews findings, checks overlapping edits, verifies integration and spot-checks the changes. This is a prescriptive coordination procedure, not a scheduler implementation. The text asks for isolated context but provides no isolation primitive, concurrency budget, timeout, cancellation or conflict-resolution mechanism. The same-file or same-resource exclusion is more actionable than assigning one agent to every failing test file.",
+  "corrections": [
+    "The graph explicitly routes related failures to one investigator and shared-state cases to sequential agents. It has no negative edge from the initial multiple-failures node; do not invent an executable decision algorithm.",
+    "The frontmatter's 2+ independent tasks and the example condition of 3+ failing test files describe different units of work. Preserve the wording without asserting a proven numerical contradiction.",
+    "The listed review-and-integrate steps do not demonstrate a transactional merge or rollback protocol. Summaries and nonoverlapping filenames alone do not establish semantic independence.",
+    "The narrative's zero conflicts and '3 problems in time of1' provide no timing samples, serial control, token cost or failure-rate measurement. They cannot support an empirical speedup.",
+    "The source's full-suite instruction is reported as its recommendation; this project uses focused inner-loop checks and appropriate integration checks under its own policy."
+  ],
+  "source_scope": "The complete four admitted source files across this three-record packet were read at the pinned Git revision. Scope is prescriptive text interpretation; no native tool execution or efficacy test was performed.",
+  "supporting_ranges": [
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 2,
+      "line_end": 3,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "f7ae1c213e4e44ac93a0fe82216cadde921cf23da1548f8459e759bcd0902756",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L2-L3"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 10,
+      "line_end": 14,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "58d75983ca49c98db475536d7038d5bd92eb18b482f0e031146142e83b88c07b",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L10-L14"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 18,
+      "line_end": 45,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "42caf6454593e0e6565bbd318680fea2614299f868466d71fd8118b5a49999bd",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L18-L45"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 49,
+      "line_end": 89,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "63a0bb88476a6fe9d8b7436936a92c0ef331b8b1e709f000db78166e45eeb944",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L49-L89"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 98,
+      "line_end": 109,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "7a56243c4a50d8870ef8aaa12ccf0a7918538997b8fd0cc544eef5bb21539592",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L98-L109"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 126,
+      "line_end": 131,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "5566c286d82d02bc39e11bdecdde0faa58ee5303afe4dcb51b9a31ccf41b1dc5",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L126-L131"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "line_start": 151,
+      "line_end": 182,
+      "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+      "source_sha256": "76806091c7f923ba2596546b19cccd98a08e57a68745df77c3a7b998fe838e2b",
+      "range_sha256": "430cddd759bcb39cfd4cfcf3223b4c0daaa59994451187793ed7c8ff129ab87b",
+      "unit_ids": [
+        "source:superpowers:b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37:skills/dispatching-parallel-agents/SKILL.md:0-6441"
+      ],
+      "url": "https://github.com/obra/superpowers/blob/b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37/skills/dispatching-parallel-agents/SKILL.md#L151-L182"
+    }
+  ],
+  "source_revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37",
+  "accepted_body_sha256": "c456054c9f2335a6b1b0dd5c0471d4a8586c6a49e7ec0be3899838e5fe4bff5d",
+  "adoption_boundary": "Use as a source-backed design reference for defining ownership and a return contract. Independence must be established from actual dependencies and shared resources; this knowledge is not permission to increase concurrency or run a full suite for every change.",
+  "schema_version": "mindie-reviewed-source-record/1",
+  "source_repository": "obra/superpowers",
+  "editorial_packet_sha256": "02a40bf21867a833873b526b9293be948cc4334b1f97d03bf8e989865fd17752",
+  "evidence_strength": "single_observation",
+  "execution": "not_performed",
+  "original_artifact_sha256": {
+    "original_review_output": "baa586a7cea712816b7dad0c2c3ef5c4819ee69b05b6b74b60d2e0611d19b68c",
+    "original_receipt": "dd8a016c687aa2bb252d5313db892df4fcbcfdf935d321528a01cd89174befbb",
+    "original_admission": "cb776595e013411ba346f0b218ad971006699a198862ae005d19325258b98950"
+  }
+}
