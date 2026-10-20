@@ -1,6 +1,28 @@
 {
-  "build_elapsed_ms": 3.538958029821515,
+  "build_elapsed_ms": 8.076166035607457,
   "closure": {
+    "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": [
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence",
+      "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+      "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+    ],
+    "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+    ],
+    "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+    ],
+    "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms"
     ],
@@ -8,14 +30,55 @@
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
     ],
+    "unit-controlled-code-perturbation-and-evolution-strategy-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence",
+      "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+    ],
+    "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+    ],
+    "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
+    "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+    ],
+    "unit-harness-rollback-advice-forensics-and-history-recovery-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+    ],
+    "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+    ],
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
     ],
+    "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+    ],
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
+    "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": [
+      "unit-superpowers-claim-evidence-scope"
+    ],
     "unit-remote-npu-container-patch-and-long-job-verification-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-sift-five-state-compliance-and-result-process-calibration-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
     ],
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -27,13 +90,27 @@
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "generation": "f7499cff2985df660a84291ab9df1fb30515cf74c7fcb1cdb23fc0b10e3d434f",
+  "generation": "7331894c90f4fd88a1bd70949894b96b80a88c4f005e54cde5be825ca7589e51",
   "id_path": {
+    "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer/unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms.md",
+    "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md",
+    "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts/unit-ascendc-vv-cv-operator-and-skill-governance-check-sop.md",
+    "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry/unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop.md",
+    "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms/unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms.md",
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": "engineering/benchmarking/unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop.md",
     "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
+    "unit-controlled-code-perturbation-and-evolution-strategy-workflow": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md",
+    "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle/unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop.md",
+    "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants/unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms.md",
+    "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates/unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop.md",
+    "unit-harness-rollback-advice-forensics-and-history-recovery-workflow": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery/unit-harness-rollback-advice-forensics-and-history-recovery-workflow.md",
+    "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop/unit-harness-workflow-dag-state-machine-and-approval-gate-workflow.md",
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
+    "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md",
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
+    "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle/unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms.md",
     "unit-remote-npu-container-patch-and-long-job-verification-sop": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
+    "unit-sift-five-state-compliance-and-result-process-calibration-sop": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration/unit-sift-five-state-compliance-and-result-process-calibration-sop.md",
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
     "unit-superpowers-claim-evidence-scope": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
     "unit-superpowers-parallel-investigation-independence": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
@@ -42,8 +119,267 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 9,
+  "unit_count": 23,
   "units": [
+    {
+      "category": "axiom",
+      "conditions": {
+        "component": "knowledge-query BM25/TF-IDF index",
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c",
+        "tokenizer_mode": "TOKENIZER_SUBWORD"
+      },
+      "domain_path": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer",
+      "evidence_strength": "software_contract",
+      "id": "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms",
+      "inherits_from": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer/unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/evals/test_subword_tokenizer.py#L1-L140",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/.agents/skills/knowledge-query/scripts/retrieval/index.py#L1-L180"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:evals/test_subword_tokenizer.py",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "Ascend Identifier Subword Tokenization (CamelCase/snake_case Split) and Accessor Prefix Stripping Axioms",
+      "token_estimate": 656,
+      "triggers": {
+        "error_signatures": [
+          "TOKENIZER_SUBWORD",
+          "TOKENIZER_V3",
+          "test_subword_tokenizer.py"
+        ],
+        "keywords": [
+          "subword tokenization",
+          "CamelCase split",
+          "accessor prefix stripping",
+          "DataCopyPad subwords"
+        ]
+      }
+    },
+    {
+      "category": "mutator",
+      "conditions": {
+        "hardware": [
+          "Ascend 910B (A2)",
+          "Ascend 910C (A3)"
+        ],
+        "language": "Ascend C",
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c",
+        "strategy_ids": [
+          "P19",
+          "P69",
+          "P71",
+          "P138",
+          "P145"
+        ]
+      },
+      "domain_path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators",
+      "evidence_strength": "software_contract",
+      "id": "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator",
+      "inherits_from": [
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+      ],
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p19_custom_pingpong_double_buffer.md#L1-L63",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p69_ub_fused_vector_chain.md#L1-L58",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p71_matmul_ibshare_l1.md#L1-L50",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p138_host_tiling_l0_capacity_guard.md#L1-L46",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p145_multilaunch_no_same_launch_gm_rw.md#L1-L77"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:knowledge/contrib/ascendc/optimizations/evolution_strategies/cards/p69_ub_fused_vector_chain.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L4",
+      "title": "Ascend C Five High-Yield Kernel Mutators: UB Vector Chain, Custom PingPong, Matmul IBShare, L0 Capacity Guard, and Multi-Launch GM Barrier",
+      "token_estimate": 1145,
+      "triggers": {
+        "error_signatures": [
+          "BuffersPolicyDB",
+          "CFG_IBSHARE_NORM",
+          "GetCoreMemSize(CoreMemType::L0_C"
+        ],
+        "keywords": [
+          "P19 custom PingPong",
+          "P69 UB fused vector chain",
+          "P71 Matmul IBShare",
+          "P138 L0 capacity guard",
+          "P145 multi-launch GM visibility"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "operator_paradigms": [
+          "VV (Vector-Vector)",
+          "CV (Cube-Vector MIX)"
+        ],
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c",
+        "workload": [
+          "Auditing Ascend C operator/API knowledge cards, CV mixed-core synchronization rules, and agent skill packaging"
+        ]
+      },
+      "domain_path": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts",
+      "evidence_strength": "software_contract",
+      "id": "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop",
+      "inherits_from": [
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts/unit-ascendc-vv-cv-operator-and-skill-governance-check-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/governance/specs/schemas.md#L1-L180",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/governance/specs/skills.md#L1-L140",
+          "https://gitcode.com/cann/cannbot-skills/blob/f305e200aa4b1e1fed73cd21ff1f083b8df25a1e/plugins-community/collaborative-agent-kernel-evolution/skills/cake-code-review/references/cv_checklist.md#L1-L120"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:governance/specs/schemas.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Ascend C VV vs CV Operator Card Structural Checklists, Header Verification, and Skill Anti-Bloat SOP",
+      "token_estimate": 778,
+      "triggers": {
+        "error_signatures": [
+          "source_headers path does not exist under include",
+          "CrossCoreSetFlag",
+          "CrossCoreWaitFlag"
+        ],
+        "keywords": [
+          "VV vs CV checklist",
+          "MIX_AIC MIX_AIV",
+          "source_headers verification",
+          "skill anti-bloat"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "benchmark_suite": "CANN-Bench",
+        "repository": "cann/cann-bench",
+        "revision": "2d7cd332247f33a66ca67c77d9f09d446a780dfe",
+        "workload": [
+          "Auditing agent-generated NPU kernels against reward hacking and isolating NPU card hangs during batch evaluation"
+        ]
+      },
+      "domain_path": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry",
+      "evidence_strength": "software_contract",
+      "id": "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop",
+      "inherits_from": [
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+      ],
+      "path": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry/unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/docs/guide/submission_rules.md#L1-L191",
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/docs/design/retry_design.md#L1-L140"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cann-bench@2d7cd332247f33a66ca67c77d9f09d446a780dfe:docs/guide/submission_rules.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "CANN-Bench Seven Anti-Reward-Hacking Guards (SUB-BEH-001..007) and TaskUnit Partial-Recovery Retry SOP",
+      "token_estimate": 919,
+      "triggers": {
+        "error_signatures": [
+          "TorchOpGuard",
+          "DeviceResidencyGuard",
+          "_try_recover_partial_results"
+        ],
+        "keywords": [
+          "anti-reward-hacking",
+          "data_ptr address rotation",
+          "is_contiguous view check",
+          "bad_cases quarantine"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "benchmark_suite": "CANN-Bench Season 2 (60 operators, L1-L5)",
+        "repository": "cann/cann-bench",
+        "revision": "2d7cd332247f33a66ca67c77d9f09d446a780dfe",
+        "scoring_weights": "w_c=0.2, w_f=0.3, w_p=0.5"
+      },
+      "domain_path": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms",
+      "evidence_strength": "software_contract",
+      "id": "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms/unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/docs/spec/benchmark_spec.md#L1-L220",
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/README.md#L1-L160"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cann-bench@2d7cd332247f33a66ca67c77d9f09d446a780dfe:docs/spec/benchmark_spec.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "CANN-Bench HAP Metric Saturation Properties, Invalid-Anchor Guard, and Five-Level Curriculum Axioms",
+      "token_estimate": 896,
+      "triggers": {
+        "error_signatures": [
+          "EachOperatorScore all-case veto",
+          "Horizon-Anchored Performance",
+          "t_anchor_0 <= t_anchor_100"
+        ],
+        "keywords": [
+          "HAP saturation",
+          "invalid anchor guard",
+          "five-level operator curriculum",
+          "harmonic mean speedup flaw"
+        ]
+      }
+    },
     {
       "category": "sop",
       "conditions": {
@@ -153,6 +489,310 @@
       }
     },
     {
+      "category": "workflow",
+      "conditions": {
+        "knowledge_collections": [
+          "controlled_code_perturbation (180 cards, 10 families)",
+          "evolution_strategies (P/D/A/R 161 cards + X 89 discoveries)"
+        ],
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c"
+      },
+      "domain_path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery",
+      "evidence_strength": "software_contract",
+      "id": "unit-controlled-code-perturbation-and-evolution-strategy-workflow",
+      "inherits_from": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/controlled_code_perturbation/index.md#L1-L16",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/knowledge/contrib/ascendc/optimizations/evolution_strategies/index.md#L1-L9",
+          "https://gitcode.com/cann/cannbot-skills/blob/f305e200aa4b1e1fed73cd21ff1f083b8df25a1e/plugins-community/collaborative-agent-kernel-evolution/skills/cake-evo/SKILL.md#L1-L180"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:knowledge/contrib/ascendc/optimizations/controlled_code_perturbation/index.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Controlled Code Perturbation Across Ten Operator Families and Evolutionary Strategy Promotion Workflow",
+      "token_estimate": 1031,
+      "triggers": {
+        "error_signatures": [
+          "controlled_code_perturbation",
+          "evolution_strategies",
+          "cake-evo"
+        ],
+        "keywords": [
+          "single-variable code perturbation",
+          "X-series discovery promotion",
+          "ten operator families",
+          "collaborative-agent-kernel-evolution"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "component": "cannbot-sentry/packages/cpx",
+        "protocols": [
+          "Anthropic Messages",
+          "OpenAI ChatCompletions",
+          "OpenAI Responses"
+        ],
+        "repository": "cann/cannbot-sentry",
+        "revision": "c894c239444bce00cea23679de074df1fc4ed51d"
+      },
+      "domain_path": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle",
+      "evidence_strength": "software_contract",
+      "id": "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop",
+      "inherits_from": [
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+      ],
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle/unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/cpx/README.md#L1-L180",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/cpx/ARCHITECTURE.md#L80-L240"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-sentry@c894c239444bce00cea23679de074df1fc4ed51d:packages/cpx/README.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "cpx Multi-Protocol SSE Reassembly, Subagent Swimlane Bridging, NO_PROXY Bypass, and .jsonl.7z Archive SOP",
+      "token_estimate": 880,
+      "triggers": {
+        "error_signatures": [
+          ".jsonl.7z",
+          "ProxyAgent",
+          "content_block_delta"
+        ],
+        "keywords": [
+          "cpx SSE reassembly",
+          "subagent toolUseId bridging",
+          "NO_PROXY localhost hop",
+          "LZMA2 7z archive"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "component": "cannbot-sentry/packages/cpx",
+        "repository": "cann/cannbot-sentry",
+        "revision": "c894c239444bce00cea23679de074df1fc4ed51d",
+        "workload": [
+          "Transparent localhost LLM wire proxy capture, credential scrubbing, and zero-residue CLI process wrapping"
+        ]
+      },
+      "domain_path": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants",
+      "evidence_strength": "software_contract",
+      "id": "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants/unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/cpx/ARCHITECTURE.md#L1-L240"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-sentry@c894c239444bce00cea23679de074df1fc4ed51d:packages/cpx/ARCHITECTURE.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "cpx Single-Chokepoint Wire Redaction (dispatchEmit), Flush-Before-End, and Zero-Residue Injection Axioms",
+      "token_estimate": 833,
+      "triggers": {
+        "error_signatures": [
+          "dispatchEmit single chokepoint",
+          "OPENCODE_CONFIG_CONTENT",
+          "scrubString"
+        ],
+        "keywords": [
+          "single write chokepoint",
+          "first4...last4 masking",
+          "flush before res.end",
+          "zero-residue injection"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "eval_harness": "evals/run_retrieval.py & mindie_knowledge/graded/eval_harness.py",
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c",
+        "workload": [
+          "Benchmarking knowledge routing precision, recall, MRR, and cross-domain leak prevention"
+        ]
+      },
+      "domain_path": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates",
+      "evidence_strength": "software_contract",
+      "id": "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop",
+      "inherits_from": [
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+      ],
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates/unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/evals/run_retrieval.py#L1-L260",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/evals/retrieval_cases.yaml#L1-L120"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:evals/run_retrieval.py",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Declarative Retrieval Evaluation Harness: Recall-at-K, MRR, expected_any Groups, and Zero-Leak Gate SOP",
+      "token_estimate": 777,
+      "triggers": {
+        "error_signatures": [
+          "forbidden_leak_rate",
+          "foundation_baseline_rate",
+          "expected_any"
+        ],
+        "keywords": [
+          "retrieval_cases.yaml",
+          "run_retrieval.py",
+          "Recall-at-K MRR gate",
+          "out_of_scope leak"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "component": "cannbot/harness/workflow-rollback-advice",
+        "repository": "cann/cannbot",
+        "revision": "d0f8c40ebc208fa17323781c89e4ec6ea16e4c52",
+        "workload": [
+          "Cross-task DAG rollback forensics, CoW checkpoint restoration, and upstream redo guidance generation"
+        ]
+      },
+      "domain_path": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery",
+      "evidence_strength": "software_contract",
+      "id": "unit-harness-rollback-advice-forensics-and-history-recovery-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery/unit-harness-rollback-advice-forensics-and-history-recovery-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-rollback-advice/SKILL.md#L1-L120",
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-orchestrator/scripts/orchestrator.py#L245-L378"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot@d0f8c40ebc208fa17323781c89e4ec6ea16e4c52:harness/workflow-rollback-advice/SKILL.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Harness Workflow Rollback Advice Forensics, CoW Snapshot Recovery, and Four-Section Advice Workflow",
+      "token_estimate": 879,
+      "triggers": {
+        "error_signatures": [
+          "advice_pending",
+          "Rollback Advice four sections",
+          "on_exhaust: rollback"
+        ],
+        "keywords": [
+          "copy_tree clear_tree .workflow",
+          "rollback_to",
+          "--reflink=auto",
+          "finish_advice"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "component": "cannbot/harness/workflow-orchestrator",
+        "providers": [
+          "opencode",
+          "cannbot",
+          "claude",
+          "pi",
+          "codex"
+        ],
+        "repository": "cann/cannbot",
+        "revision": "d0f8c40ebc208fa17323781c89e4ec6ea16e4c52"
+      },
+      "domain_path": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop",
+      "evidence_strength": "software_contract",
+      "id": "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop/unit-harness-workflow-dag-state-machine-and-approval-gate-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-orchestrator/scripts/orchestrator.py#L1-L550",
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-orchestrator/SKILL.md#L1-L160"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot@d0f8c40ebc208fa17323781c89e4ec6ea16e4c52:harness/workflow-orchestrator/scripts/orchestrator.py",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Harness Workflow Orchestrator Event-Driven DAG State Machine, Verdict Files, and Approval Loop Workflow",
+      "token_estimate": 957,
+      "triggers": {
+        "error_signatures": [
+          "[ALL TASK FINISHED]",
+          "[STUCK]",
+          "verdict_missing"
+        ],
+        "keywords": [
+          "orchestrator.lock PID liveness",
+          "FIRST_COMPLETED",
+          "consume_verdict_file",
+          "reset_transient"
+        ]
+      }
+    },
+    {
       "category": "sop",
       "conditions": {
         "repository": "cann/cannbot",
@@ -199,6 +839,56 @@
           "poll_workflow.py",
           "approve_task.py",
           "Rollback Advice"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "observability_suite": "cannbot-sentry (insight + sift eval)",
+        "repository": "cann/cannbot-sentry",
+        "revision": "c894c239444bce00cea23679de074df1fc4ed51d",
+        "workload": [
+          "Session swimlane time/token attribution, 6-dimension scorecard grading, and A/B skill ablation experiments"
+        ]
+      },
+      "domain_path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation",
+      "evidence_strength": "software_contract",
+      "id": "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow",
+      "inherits_from": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/insight/package.json#L1-L83",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/sift/README.md#L100-L240"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-sentry@c894c239444bce00cea23679de074df1fc4ed51d:packages/insight/package.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "cannbot-insight Six-Swimlane Phase Attribution, Six-Dimension Scorecard, and A/B Skill Ablation Workflow",
+      "token_estimate": 897,
+      "triggers": {
+        "error_signatures": [
+          "cannbot-insight six swimlanes",
+          "completion veto",
+          "with_skill vs without_skill"
+        ],
+        "keywords": [
+          "six swimlanes",
+          "active vs wall-clock gap",
+          "six-dimension scorecard",
+          "skill ablation"
         ]
       }
     },
@@ -268,6 +958,55 @@
           "port collision",
           "rendezvous",
           "exclusive timing lease"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "bundle_spec": "OKF v0.2",
+        "repository": "cann/cannbot-knowledge",
+        "revision": "be5882ef29fa9943305085652d2025a038ba491c",
+        "workload": [
+          "Domain knowledge bundle authoring, frontmatter schema enforcement, and lifecycle governance"
+        ]
+      },
+      "domain_path": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle",
+      "evidence_strength": "software_contract",
+      "id": "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms",
+      "inherits_from": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle/unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/governance/specs/okf.md#L1-L160",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/governance/specs/frontmatter.md#L1-L210",
+          "https://gitcode.com/cann/cannbot-knowledge/blob/be5882ef29fa9943305085652d2025a038ba491c/governance/contracts/checks/trust.py#L1-L120"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-knowledge@be5882ef29fa9943305085652d2025a038ba491c:governance/specs/okf.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "OKF v0.2 Nine Path Profiles, 40-Hex Commit Provenance Pinning, and Orthogonal Trust Tier Axioms",
+      "token_estimate": 941,
+      "triggers": {
+        "error_signatures": [
+          "replaced_by is required when status is deprecated",
+          "machine-confirmed",
+          "human-reviewed"
+        ],
+        "keywords": [
+          "OKF v0.2",
+          "nine path profiles",
+          "orthogonal trust tier",
+          "40-hex commit pinning"
         ]
       }
     },
@@ -343,6 +1082,56 @@
           "failed",
           "unknown",
           "external effects"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "audit_engine": "cannbot-sentry/packages/sift",
+        "repository": "cann/cannbot-sentry",
+        "revision": "c894c239444bce00cea23679de074df1fc4ed51d",
+        "workload": [
+          "Post-hoc agent trajectory skill-compliance auditing, anti-fabrication verification, and outcome calibration"
+        ]
+      },
+      "domain_path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration",
+      "evidence_strength": "software_contract",
+      "id": "unit-sift-five-state-compliance-and-result-process-calibration-sop",
+      "inherits_from": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration/unit-sift-five-state-compliance-and-result-process-calibration-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/sift/README.md#L1-L220",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/sift/sift/core/models.py#L1-L220"
+        ],
+        "promotion_status": "verified",
+        "source_locator": "cann/cannbot-sentry@c894c239444bce00cea23679de074df1fc4ed51d:packages/sift/README.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "sift Six Instruction Categories, Five-State Compliance Verdicts, and Result-vs-Process Calibration SOP",
+      "token_estimate": 960,
+      "triggers": {
+        "error_signatures": [
+          "HIGH_SCORE_SUSPECT",
+          "ANTI_FABRICATION",
+          "pass_rate_programmatic"
+        ],
+        "keywords": [
+          "sift compliance audit",
+          "five-state calibration",
+          "analyze_provenance five file dimensions",
+          "BlindComparator"
         ]
       }
     },
