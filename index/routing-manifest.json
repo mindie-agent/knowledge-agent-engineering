@@ -1,5 +1,5 @@
 {
-  "build_elapsed_ms": 1.9539159256964922,
+  "build_elapsed_ms": 2.0123340655118227,
   "closure": {
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
     "unit-remote-npu-container-patch-and-long-job-verification-sop": [
