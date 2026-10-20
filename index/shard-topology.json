@@ -1,5 +1,27 @@
 {
   "closure": {
+    "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": [
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence",
+      "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+      "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+    ],
+    "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+    ],
+    "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+    ],
+    "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms"
     ],
@@ -7,14 +29,55 @@
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
     ],
+    "unit-controlled-code-perturbation-and-evolution-strategy-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence",
+      "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+    ],
+    "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+    ],
+    "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
+    "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+    ],
+    "unit-harness-rollback-advice-forensics-and-history-recovery-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+    ],
+    "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+    ],
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
     ],
+    "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+    ],
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
+    "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": [
+      "unit-superpowers-claim-evidence-scope"
+    ],
     "unit-remote-npu-container-patch-and-long-job-verification-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-sift-five-state-compliance-and-result-process-calibration-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
     ],
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -29,24 +92,54 @@
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 67112,
-      "estimated_tokens": 12412,
+      "bytes": 142738,
+      "estimated_tokens": 24961,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms",
+        "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator",
+        "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop",
+        "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop",
+        "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms",
         "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop",
         "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow",
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow",
+        "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop",
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms",
+        "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop",
+        "unit-harness-rollback-advice-forensics-and-history-recovery-workflow",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
         "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+        "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow",
         "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms",
         "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-sift-five-state-compliance-and-result-process-calibration-sop",
         "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
         "unit-superpowers-claim-evidence-scope",
         "unit-superpowers-parallel-investigation-independence",
         "unit-superpowers-review-request-git-range"
       ],
-      "units": 9
+      "units": 23
     },
     "domains": [
+      {
+        "automatic": false,
+        "bytes": 21066,
+        "estimated_tokens": 3570,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "audit",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop",
+          "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms",
+          "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow",
+          "unit-sift-five-state-compliance-and-result-process-calibration-sop"
+        ],
+        "units": 4
+      },
       {
         "automatic": false,
         "bytes": 67112,
@@ -67,11 +160,109 @@
           "unit-superpowers-review-request-git-range"
         ],
         "units": 9
+      },
+      {
+        "automatic": false,
+        "bytes": 10598,
+        "estimated_tokens": 1815,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "evaluation",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop",
+          "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+        ],
+        "units": 2
+      },
+      {
+        "automatic": false,
+        "bytes": 19739,
+        "estimated_tokens": 3152,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "governance",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms",
+          "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop",
+          "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop",
+          "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+        ],
+        "units": 4
+      },
+      {
+        "automatic": false,
+        "bytes": 24223,
+        "estimated_tokens": 4012,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "orchestration",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator",
+          "unit-controlled-code-perturbation-and-evolution-strategy-workflow",
+          "unit-harness-rollback-advice-forensics-and-history-recovery-workflow",
+          "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+        ],
+        "units": 4
       }
     ]
   },
-  "index_build_elapsed_ms": 3.538958029821515,
+  "index_build_elapsed_ms": 8.076166035607457,
   "leaves": [
+    {
+      "automatic": false,
+      "bytes": 5169,
+      "estimated_tokens": 880,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4941,
+      "estimated_tokens": 833,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5367,
+      "estimated_tokens": 897,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5589,
+      "estimated_tokens": 960,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-sift-five-state-compliance-and-result-process-calibration-sop"
+      ],
+      "units": 1
+    },
     {
       "automatic": false,
       "bytes": 6553,
@@ -186,6 +377,136 @@
       "recommended_action": "review_leaf_split",
       "unit_ids": [
         "unit-superpowers-claim-evidence-scope"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5371,
+      "estimated_tokens": 919,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5227,
+      "estimated_tokens": 896,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5549,
+      "estimated_tokens": 941,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5058,
+      "estimated_tokens": 778,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4834,
+      "estimated_tokens": 777,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4298,
+      "estimated_tokens": 656,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 7194,
+      "estimated_tokens": 1145,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 6189,
+      "estimated_tokens": 1031,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5301,
+      "estimated_tokens": 879,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-harness-rollback-advice-forensics-and-history-recovery-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5539,
+      "estimated_tokens": 957,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
       ],
       "units": 1
     }
@@ -194,6 +515,34 @@
   "two_level_subtrees": [
     {
       "automatic": false,
+      "bytes": 10110,
+      "estimated_tokens": 1713,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop",
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 10956,
+      "estimated_tokens": 1857,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow",
+        "unit-sift-five-state-compliance-and-result-process-calibration-sop"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
       "bytes": 6553,
       "estimated_tokens": 1203,
       "exceeds": [],
@@ -308,10 +657,145 @@
         "unit-superpowers-claim-evidence-scope"
       ],
       "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 10598,
+      "estimated_tokens": 1815,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "evaluation/cann-bench/hap-and-curriculum",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop",
+        "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 10607,
+      "estimated_tokens": 1719,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 9132,
+      "estimated_tokens": 1433,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "governance/okf-and-contracts/subword-retrieval-eval",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms",
+        "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 13383,
+      "estimated_tokens": 2176,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator",
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 10840,
+      "estimated_tokens": 1836,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-harness-rollback-advice-forensics-and-history-recovery-workflow",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+      ],
+      "units": 2
     }
   ],
-  "unit_count": 9,
+  "unit_count": 23,
   "units": {
+    "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": {
+      "bytes": 4298,
+      "category": "axiom",
+      "content_sha256": "f46916c8f12850eae8da66280d579bd01bdc6bc8ffed31127fc7a7035042d321",
+      "domain_path": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer",
+      "estimated_tokens": 656,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer/unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms.md",
+      "tier": "L1"
+    },
+    "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator": {
+      "bytes": 7194,
+      "category": "mutator",
+      "content_sha256": "c793f763581789676eb7e56503287b18ea3ff7caf74f899003c6cd007c862b2f",
+      "domain_path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators",
+      "estimated_tokens": 1145,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-controlled-code-perturbation-and-evolution-strategy-workflow"
+      ],
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md",
+      "tier": "L4"
+    },
+    "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop": {
+      "bytes": 5058,
+      "category": "sop",
+      "content_sha256": "2f05be47953ddd5278547f1492b7c2d9efdcb06f9fa967d9f603d2b7d7ffef51",
+      "domain_path": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts",
+      "estimated_tokens": 778,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts/unit-ascendc-vv-cv-operator-and-skill-governance-check-sop.md",
+      "tier": "L2"
+    },
+    "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": {
+      "bytes": 5371,
+      "category": "sop",
+      "content_sha256": "7f8dd292e9a09b51d7affe6056314a5612a85ce22d816a7b6f749650c620327b",
+      "domain_path": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry",
+      "estimated_tokens": 919,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+      ],
+      "path": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry/unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop.md",
+      "tier": "L2"
+    },
+    "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms": {
+      "bytes": 5227,
+      "category": "axiom",
+      "content_sha256": "a5e5a1aba7100b61632d62aec9e49c223aa27228ca312a9ce61a4d07ce74617c",
+      "domain_path": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms",
+      "estimated_tokens": 896,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms/unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms.md",
+      "tier": "L1"
+    },
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": {
       "bytes": 5730,
       "category": "sop",
@@ -339,6 +823,84 @@
       "path": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
       "tier": "L3"
     },
+    "unit-controlled-code-perturbation-and-evolution-strategy-workflow": {
+      "bytes": 6189,
+      "category": "workflow",
+      "content_sha256": "6ae31bbab337ab75b2a82eca5a35efcdcecbb6e86205ef4d0fece875099e7412",
+      "domain_path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery",
+      "estimated_tokens": 1031,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "path": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md",
+      "tier": "L3"
+    },
+    "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop": {
+      "bytes": 5169,
+      "category": "sop",
+      "content_sha256": "323cd127ca2918c36d73fefc80e4b3c109ca7cc7365d6227fd79aa08701bd825",
+      "domain_path": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle",
+      "estimated_tokens": 880,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms"
+      ],
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle/unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop.md",
+      "tier": "L2"
+    },
+    "unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms": {
+      "bytes": 4941,
+      "category": "axiom",
+      "content_sha256": "8e429e29bb62548b7d25562c32e3b65e3ba57312db49d31705464884ed2fc8ac",
+      "domain_path": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants",
+      "estimated_tokens": 833,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "audit/sentry-sift-insight/credential-chokepoint-cpx/wire-redaction-invariants/unit-cpx-single-chokepoint-wire-redaction-and-zero-residue-axioms.md",
+      "tier": "L1"
+    },
+    "unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop": {
+      "bytes": 4834,
+      "category": "sop",
+      "content_sha256": "339f51c1038237a16a2616a3c577e027fa6f1f13deb42e5174d3ca0cbf47a5ae",
+      "domain_path": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates",
+      "estimated_tokens": 777,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms"
+      ],
+      "path": "governance/okf-and-contracts/subword-retrieval-eval/declarative-retrieval-gates/unit-declarative-retrieval-eval-recall-mrr-and-leak-gate-sop.md",
+      "tier": "L2"
+    },
+    "unit-harness-rollback-advice-forensics-and-history-recovery-workflow": {
+      "bytes": 5301,
+      "category": "workflow",
+      "content_sha256": "dc2936e132a3772f9bbf07eb0bfdc39ad44704cc88433f86c952c47cdaebf996",
+      "domain_path": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery",
+      "estimated_tokens": 879,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/rollback-advice-and-recovery/unit-harness-rollback-advice-forensics-and-history-recovery-workflow.md",
+      "tier": "L3"
+    },
+    "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow": {
+      "bytes": 5539,
+      "category": "workflow",
+      "content_sha256": "a84a182abda0b3907907848f6b4db20a96cc8dd226b32aacebb71f57db45d6c8",
+      "domain_path": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop",
+      "estimated_tokens": 957,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
+      ],
+      "path": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop/unit-harness-workflow-dag-state-machine-and-approval-gate-workflow.md",
+      "tier": "L3"
+    },
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": {
       "bytes": 5219,
       "category": "sop",
@@ -353,6 +915,19 @@
       "path": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
       "tier": "L2"
     },
+    "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": {
+      "bytes": 5367,
+      "category": "workflow",
+      "content_sha256": "1dd2456e7977ae08dbfd97c9b6806c86ee5bbafadbdc91e084a67049cb6e765b",
+      "domain_path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation",
+      "estimated_tokens": 897,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md",
+      "tier": "L3"
+    },
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": {
       "bytes": 10009,
       "category": "axiom",
@@ -362,6 +937,19 @@
       "evidence_strength": "software_contract",
       "inherits_from": [],
       "path": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
+      "tier": "L1"
+    },
+    "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": {
+      "bytes": 5549,
+      "category": "axiom",
+      "content_sha256": "018506f2689926544d65ecab8042965a81d9774c3a6c06e3e3b612aa527b050a",
+      "domain_path": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle",
+      "estimated_tokens": 941,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle/unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms.md",
       "tier": "L1"
     },
     "unit-remote-npu-container-patch-and-long-job-verification-sop": {
@@ -376,6 +964,19 @@
         "unit-superpowers-claim-evidence-scope"
       ],
       "path": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
+      "tier": "L2"
+    },
+    "unit-sift-five-state-compliance-and-result-process-calibration-sop": {
+      "bytes": 5589,
+      "category": "sop",
+      "content_sha256": "d84b159fcdfb1e8335601698cdf82a1a8ffe39801b4a2e972bf9e720d94496bf",
+      "domain_path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration",
+      "estimated_tokens": 960,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "path": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration/unit-sift-five-state-compliance-and-result-process-calibration-sop.md",
       "tier": "L2"
     },
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": {
