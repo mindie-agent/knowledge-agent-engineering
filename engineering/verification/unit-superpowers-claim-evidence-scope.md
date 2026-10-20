@@ -40,13 +40,11 @@ triggers:
 ---
 The pinned verification skill describes a five-step reporting gate: identify evidence for a particular claim, run the relevant verification, read the output and exit status, compare the result with the claim, then report success or the actual failure with that evidence. Its claim table distinguishes a lint result from a build, a changed file from a fixed symptom, a passing test from requirements coverage, and an agent's statement from independently inspected changes. These are evidence-category distinctions. The source supplies no automated gate, freshness state machine, compliance measurement or proof that any one command establishes general correctness.
 
-Reviewed limits and corrections:
+Scope and caveats:
 
-- Correct the gate citations: identify29, run30, read31, verify32, failure/success branches33-34, and claim35; earlier candidates shifted these by one line.
 - The document literally demands a fresh full command in the current message and says partial checks prove nothing. Report that as source wording, not a universal engineering fact: a scoped check can support a scoped claim, and unrelated repeated suites do not strengthen it.
 - An observed exit0 is evidence about the command that ran, not by itself proof of complete requirements, correct environment or absence of untested defects.
 - The VCS-diff requirement in delegated-work examples is useful for code changes; do not turn it into a universal completion oracle for read-only, remote or non-code tasks.
-- Remove assertions about unseen earlier candidate time-pressure wording. The '24 failure memories' are unaudited narrative evidence and establish no defect-reduction, cost or productivity effect.
 
 Adoption boundary: Reuse the distinction between a claim and the evidence required to support it. Preserve failed and unobserved outcomes, but follow current project policy for test scope and avoid repeating verification solely because a new message is being written.
 

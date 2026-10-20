@@ -1,0 +1,719 @@
+{
+  "schema_version": "mindie-agent-engineering-npu-provenance/1",
+  "domain": "agent-engineering",
+  "collected_at": "2026-10-21",
+  "purpose": "Line-level provenance for three agent-engineering units distilled from Ascend NPU multi-agent coordination, remote container patch/verification, and stagnation-triggered RSI exploration.",
+  "read_method": "Manual file inspection at the recorded revisions. No model calls, no remote writes, no NPU execution.",
+  "requested_references": [
+    {
+      "requested_path": "skills/self-evolve/SKILL.md",
+      "status": "not_present_at_inspected_revision",
+      "inspected_repository": "cannbot-skills",
+      "inspected_revision": "1fa2cbbc9fdddb4377ca26734e9b94d91c42b975",
+      "resolution": "The inspected cannbot-skills revision has no top-level skills/ tree. The closest direct evolution-loop contracts were read from plugins-community/ops-perf-evolution and the MindIE Agent Codex skill snapshot. Their claims are cited below instead of claiming the requested file was read.",
+      "substitute_source_ids": [
+        "cannbot-ops-perf-evolution",
+        "cannbot-lingxi-evo",
+        "mindie-stagnation-pack"
+      ]
+    },
+    {
+      "requested_path": "skills/tool-git-pr-workflow/SKILL.md",
+      "status": "not_present_at_inspected_revision",
+      "inspected_repository": "cannbot-skills",
+      "inspected_revision": "1fa2cbbc9fdddb4377ca26734e9b94d91c42b975",
+      "resolution": "The inspected cannbot-skills revision has no skills/tool-git-pr-workflow path. PR text/readback and worktree discipline were read from infra/gitcode-pr-handler and plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management.",
+      "substitute_source_ids": [
+        "cannbot-gitcode-pr-handler",
+        "cannbot-git-worktree"
+      ]
+    }
+  ],
+  "source_roots": {
+    "cannbot-skills": {
+      "repository": "https://gitcode.com/cann/cannbot-skills",
+      "revision": "1fa2cbbc9fdddb4377ca26734e9b94d91c42b975"
+    },
+    "cannbot-knowledge": {
+      "repository": "https://gitcode.com/cann/cannbot-knowledge",
+      "revision": "7ea0efbeb79f2559f121fa8514a9fe5c82245807"
+    },
+    "msagent": {
+      "repository": "https://gitcode.com/Ascend/msagent",
+      "revision": "521f8ead0ebda5db5b282f0c3c4147006e01e016"
+    },
+    "mindie-bench": {
+      "repository": "https://github.com/mindie-agent/mindie-bench",
+      "revision": "c42493d6ff916debf2967b76adace62113b41340"
+    },
+    "mindie-agent-codex": {
+      "repository": "https://github.com/mindie-agent/mindie-agent-codex",
+      "revision": "24049537746b23f9a5fc91412319a73488857a8e"
+    },
+    "mindie-003-execution": {
+      "repository": "offline execution workspace",
+      "revision": "sha256:9204f6be8c973adc88c0238456ec60872cc18c072866c85d6c4ad9bbbb797dbd"
+    },
+    "knowledge-operators": {
+      "repository": "local knowledge corpus",
+      "revision": "worktree snapshot 2026-10-21"
+    },
+    "knowledge-agent-engineering": {
+      "repository": "https://github.com/mindie-agent/knowledge-agent-engineering",
+      "revision": "85d401e5a8021650755e88b60f537260ae5d870a"
+    }
+  },
+  "sources": [
+    {
+      "id": "a3-dual-die-package",
+      "kind": "software_contract",
+      "source_root": "cannbot-knowledge",
+      "path": "knowledge/common/platforms/concepts/target_ascend910c.md",
+      "file_sha256": "ace32677e5de42967fdbfe6188e311f55a2f0fb209c552de24b1948191978c3d",
+      "ranges": [
+        {
+          "line_start": 20,
+          "line_end": 22
+        },
+        {
+          "line_start": 45,
+          "line_end": 49
+        }
+      ],
+      "assertions": [
+        "The A3 platform is two Ascend910B dies in one package, not a separate single-die family.",
+        "CANN build selection still follows the Ascend910B family with the c220 build mode and arch22.",
+        "Per-package compute is described as two dies; per-die values must not be treated as per-package values."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ]
+    },
+    {
+      "id": "a3-phy-id-logical-map",
+      "kind": "software_contract",
+      "source_root": "mindie-bench",
+      "path": "AGENTS.md",
+      "file_sha256": "850b51da639d1890ae2f28d141b88d6393e2756a51f87805bef7b0b0dbf03cab",
+      "ranges": [
+        {
+          "line_start": 80,
+          "line_end": 82
+        }
+      ],
+      "assertions": [
+        "An A3 standing cluster is described as 8 logical NPUs x 2 dies, with die-level Phy-ID values 0..15.",
+        "The same contract requires isolated sandbox paths such as /tmp/mindie-bench-* and non-destructive npu-smi probes so active jobs are not disturbed.",
+        "The contract therefore distinguishes the logical NPU namespace from the die-level Phy-ID namespace."
+      ],
+      "redactions": [
+        "The cited range also contains cluster host addresses; those addresses are omitted from this record and from every unit body."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ]
+    },
+    {
+      "id": "logical-device-mapping",
+      "kind": "software_contract",
+      "source_root": "msagent",
+      "path": "skills/quantizer/msmodelslim-adapter-verification/references/verification_guide.md",
+      "file_sha256": "b733976b2df443f6e87fe105427781ca6085d5afb4086b0f5d3e689d04011b57",
+      "ranges": [
+        {
+          "line_start": 9,
+          "line_end": 13
+        }
+      ],
+      "assertions": [
+        "ASCEND_RT_VISIBLE_DEVICES selects zero-indexed physical card numbers.",
+        "After the environment variable is set, the process-visible npu:0 is a logical device number, not necessarily physical card 0.",
+        "The environment variable determines the mapping from logical device number to physical card."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ]
+    },
+    {
+      "id": "rendezvous-port-domains",
+      "kind": "software_contract",
+      "source_root": "cannbot-skills",
+      "path": "model/model-infer-parallel-impl/references/standalone_parallel.md",
+      "file_sha256": "803d1dc6ad1bceec996adc7794e4401fc62262ad681aa786c3d30b4f3bc2f794",
+      "ranges": [
+        {
+          "line_start": 357,
+          "line_end": 359
+        }
+      ],
+      "assertions": [
+        "MASTER_PORT=29500 is the torchrun rendezvous default.",
+        "Framework deployments may use MASTER_PORT=6038 or 6138 and HCCL_IF_BASE_PORT=23456.",
+        "Mixed deployment must ensure these rendezvous ports do not conflict with other services on the same host."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ]
+    },
+    {
+      "id": "remote-device-isolation",
+      "kind": "plugin_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/collaborative-agent-kernel-evolution/skills/remote-cann-development/SKILL.md",
+      "file_sha256": "107dbfac6116af55a21b4a16b00892401968a99c1215d850e286142734e9e781",
+      "ranges": [
+        {
+          "line_start": 49,
+          "line_end": 58
+        },
+        {
+          "line_start": 145,
+          "line_end": 155
+        },
+        {
+          "line_start": 171,
+          "line_end": 171
+        }
+      ],
+      "assertions": [
+        "The remote-development configuration has a device_isolate field explicitly mapped to ASCEND_RT_VISIBLE_DEVICES for shared Docker servers.",
+        "Docker and hdspace backends differ in persistence and device exclusivity; exclusive access must not be inferred from the backend name.",
+        "The workflow requires a target, container, workdir, SOC, and optional CANN path before remote execution."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "exclusive-timing-lease",
+      "kind": "software_contract",
+      "source_root": "mindie-agent-codex",
+      "path": "plugins/mindie-agent/skills/mindie-agent/references/domain-skills.md",
+      "file_sha256": "a8af05b265c80ae572a395ea065feff7a9ea588b1c723d615a63d266990967ee",
+      "ranges": [
+        {
+          "line_start": 92,
+          "line_end": 92
+        }
+      ],
+      "assertions": [
+        "Any performance benchmark, attribution check, or profiler collection on the same physical NPU or the same A3 dual-die package must acquire an exclusive coordinator timing lease.",
+        "The next run must drain /proc process trees before it starts.",
+        "This is an explicit mutual-exclusion contract, not an advisory preference."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "cannbot-git-worktree",
+      "kind": "git_worktree_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md",
+      "file_sha256": "139fc81fad3c1b90ba6cb9a3e2ad5f065b29bd5228284ff0caba0f435e1d962e",
+      "ranges": [
+        {
+          "line_start": 196,
+          "line_end": 228
+        },
+        {
+          "line_start": 278,
+          "line_end": 285
+        }
+      ],
+      "assertions": [
+        "Each parallel variant is created as a separate git worktree with its own branch.",
+        "A worktree has its own .git file pointing at that branch, so commits from the worktree stay on the variant branch.",
+        "git -C with a realpath guard is required; relying on shell cwd can commit into the parent repository.",
+        "The parent repository must not use git add -A to commit worktree files.",
+        "Only successful stages are committed; failed stages remain at the last successful state."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "cannbot-remote-sync-loop",
+      "kind": "plugin_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/collaborative-agent-kernel-evolution/skills/remote-cann-development/SKILL.md",
+      "file_sha256": "107dbfac6116af55a21b4a16b00892401968a99c1215d850e286142734e9e781",
+      "ranges": [
+        {
+          "line_start": 118,
+          "line_end": 127
+        }
+      ],
+      "assertions": [
+        "The documented loop is: edit locally, sync to the remote target, build remotely, test or run remotely, pull results, then analyze locally.",
+        "Remote sync can be scoped to specific paths instead of the whole repository."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "cannbot-worktree-remote-sync",
+      "kind": "plugin_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md",
+      "file_sha256": "139fc81fad3c1b90ba6cb9a3e2ad5f065b29bd5228284ff0caba0f435e1d962e",
+      "ranges": [
+        {
+          "line_start": 256,
+          "line_end": 274
+        }
+      ],
+      "assertions": [
+        "Worktrees are created locally; remote sync takes an explicit worktree path so remote copies land in isolated .worktrees/<name>/ paths.",
+        "Commit timing remains local; remote execution does not change branch ownership."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "cannbot-gitcode-pr-handler",
+      "kind": "pr_review_procedure",
+      "source_root": "cannbot-skills",
+      "path": "infra/gitcode-pr-handler/SKILL.md",
+      "file_sha256": "ca22f5c26ee2f0724277e878ae7db3e6abb0e3e93a16caadb27de668cff89983",
+      "ranges": [
+        {
+          "line_start": 18,
+          "line_end": 19
+        },
+        {
+          "line_start": 112,
+          "line_end": 112
+        },
+        {
+          "line_start": 175,
+          "line_end": 175
+        }
+      ],
+      "assertions": [
+        "PR title and body content must be regenerated from the actual changed files, diff, and commits; features or platforms without code evidence must not be described.",
+        "A PATCH request returning HTTP 200 does not prove the write took effect; the PR must be read back with GET.",
+        "No test or debug comments may be sent to the target repository."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "mindie-timeout-hierarchy",
+      "kind": "software_contract",
+      "source_root": "mindie-bench",
+      "path": "AGENTS.md",
+      "file_sha256": "850b51da639d1890ae2f28d141b88d6393e2756a51f87805bef7b0b0dbf03cab",
+      "ranges": [
+        {
+          "line_start": 45,
+          "line_end": 54
+        }
+      ],
+      "assertions": [
+        "All layered execution paths enforce outer_timeout >= sum(inner_budgets) + cleanup_grace.",
+        "The local verifier reserves INVENTORY_GRACE_SEC = 10.0 so terminate_tree and inventory can run after an inner timeout.",
+        "The remote worker outer deadline is the request timeout plus 10 seconds, reserving SIGTERM, a 2-second drain, SIGKILL, and pipe flush.",
+        "The host SSH transport timeout is set above the remote worker outer timeout so the structured JSON receipt is not truncated."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "mindie-terminal-effects",
+      "kind": "software_contract",
+      "source_root": "mindie-bench",
+      "path": "AGENTS.md",
+      "file_sha256": "850b51da639d1890ae2f28d141b88d6393e2756a51f87805bef7b0b0dbf03cab",
+      "ranges": [
+        {
+          "line_start": 37,
+          "line_end": 43
+        }
+      ],
+      "assertions": [
+        "Terminal states are strictly separated into completed_pass, completed_fail, infra_failed, and unknown.",
+        "unknown is reserved for indeterminate post-execution state, such as failed workspace inventory, failed oracle restoration, or surviving residual processes.",
+        "infra_failed and unknown are reported separately and never folded into completed_fail or dropped from denominator reporting.",
+        "Scoring uses only valid terminal outcomes: completed_pass plus completed_fail."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "mindie-receipt-honesty",
+      "kind": "software_contract",
+      "source_root": "mindie-agent-codex",
+      "path": "AGENTS.md",
+      "file_sha256": "7e8925d8459868c598dfc9f00db509b9b9c1b2d3cbcb4eec57908552f5ad92df",
+      "ranges": [
+        {
+          "line_start": 65,
+          "line_end": 71
+        }
+      ],
+      "assertions": [
+        "The timeout hierarchy is an explicit wall-clock deadline contract that kills the entire child process group or Windows Job Object before draining pipes.",
+        "unknown receipts are reserved for uncertain remote execution.",
+        "A local receipt write failure must never turn a succeeded remote call into an error, and must not brick local state into a permanent fault."
+      ],
+      "used_by": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ]
+    },
+    {
+      "id": "mindie-stagnation-pack",
+      "kind": "software_contract",
+      "source_root": "mindie-agent-codex",
+      "path": "plugins/mindie-agent/skills/mindie-agent/SKILL.md",
+      "file_sha256": "22882feb20deb4d92be036a19992d6f67e558573d2212646ad623e45a87c45c7",
+      "ranges": [
+        {
+          "line_start": 44,
+          "line_end": 47
+        },
+        {
+          "line_start": 58,
+          "line_end": 59
+        }
+      ],
+      "assertions": [
+        "The stagnation gate triggers after three consecutive unimproved attempts, deduplicated by run_id, with no new fact or identified divergent layer.",
+        "Native de-biased exploration calls knowledge_query with mode=explore, native_subcontext=true, ledger_entries, bottleneck_summary, and goal.",
+        "The returned pack strips L3 workflows, keeps L1 foundations, and exposes exploration_context.subagent_fact_pack.",
+        "A fresh subagent must be seeded only with subagent_fact_pack.prompt_brief containing L1 hard constraints, L2 bottleneck evidence, L4 mutators, and conditional_avoid; the prior L3 trajectory is removed.",
+        "Real isolation requires schema_version mindie-rsi-subagent-pack/1 and inspectable stripped_l3_ids; native_subcontext=false is only an in-session warning."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "mindie-ledger-c4",
+      "kind": "software_contract",
+      "source_root": "mindie-agent-codex",
+      "path": "plugins/mindie-agent/skills/mindie-agent/references/domain-skills.md",
+      "file_sha256": "a8af05b265c80ae572a395ea065feff7a9ea588b1c723d615a63d266990967ee",
+      "ranges": [
+        {
+          "line_start": 60,
+          "line_end": 63
+        },
+        {
+          "line_start": 75,
+          "line_end": 87
+        }
+      ],
+      "assertions": [
+        "The stagnation gate is repeated with the same three-unimproved-attempt threshold and the same no-new-fact/no-divergent-layer condition.",
+        "PROGRESS.md must be atomically updated with in_flight_runs immediately after launch; a submitted run_id is never replaced.",
+        "On resume or compaction, the original run must be queried first; a new execution must not replace an active or uncertain run.",
+        "The experiment ledger records hypothesis, factors and factor roles, unit refs, receipt refs, run status, judgment, scope conditions, conditional_avoid, and supersedes_exp_id.",
+        "Compile errors, SSH drops, and invalid measurement windows are inconclusive, never domain refuted.",
+        "Contract C4: a leave-one-out delta within tolerance only marks candidate_for_sequential_pruning; with pruned_combination_verified=false the factor must be retained.",
+        "Only sequential one-at-a-time pruning runs whose final combination passes correctness_verified and performance_verified can prune; L4 distillation requires a baseline_run_id and verification_run_id."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "hidden-retention-five-categories",
+      "kind": "software_contract",
+      "source_root": "knowledge-operators",
+      "path": "Reduction/unit-vectorized-bf16-fp32-accumulation-cast-fusion-mutator.md",
+      "file_sha256": "4a82594eb41a2b5aafdfb31161aad688e36d1e3b30b870fbf68a77a9559b30bd",
+      "ranges": [
+        {
+          "line_start": 101,
+          "line_end": 104
+        }
+      ],
+      "assertions": [
+        "Hidden retention re-runs the final retained combination on frozen hidden inputs.",
+        "Each item is classified as both_pass, opt_regression, both_fail, opt_improvement, or evaluation_error.",
+        "Only comparable both_pass items enter a speedup ratio.",
+        "Guard workloads include alignment, unaligned tail, tile-boundary crossing, workspace high-water mark, graph capture/replay stability, and warm-server repeated call.",
+        "A local gain never overrides a guard regression."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "qualification-ladder",
+      "kind": "software_contract",
+      "source_root": "mindie-agent-codex",
+      "path": "plugins/mindie-agent/skills/mindie-agent/references/diagnostic-reasoning.md",
+      "file_sha256": "4b8c482832c63d8b70ee7acaf418db806bd4f9075093cf7adc7e3b99693091d7",
+      "ranges": [
+        {
+          "line_start": 38,
+          "line_end": 44
+        }
+      ],
+      "assertions": [
+        "Performance analysis starts with Phase 0 subgraph fusion analysis rather than tuning isolated operator microstages.",
+        "Fusable producer-consumer links and hard non-fusable boundaries must be identified, and exposed critical-path overlap checked.",
+        "Missing durations remain unknown; isolated kernel savings are not added into an end-to-end gain.",
+        "A pre-built qualification gate ladder G0-G3 is preferred over ad-hoc build or timing scripts."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "cannbot-ops-perf-evolution",
+      "kind": "evolution_loop_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/ops-perf-evolution/AGENTS.md",
+      "file_sha256": "94f36c5e229189d153b420c5aa9f10e9455e72f389375f68016bdc87db3e01d0",
+      "ranges": [
+        {
+          "line_start": 169,
+          "line_end": 174
+        }
+      ],
+      "assertions": [
+        "TileLang degeneration detected for three consecutive times terminates the evolution loop.",
+        "Ops repository build failure for three or more times pauses the loop for user escalation.",
+        "The world-model state may not be manually reset or bypassed.",
+        "The evolution loop is authorized to explore but must produce compilable code, not analysis alone."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "cannbot-lingxi-evo",
+      "kind": "evolution_loop_contract",
+      "source_root": "cannbot-skills",
+      "path": "plugins-community/ops-perf-evolution/agents/lingxi-evo.md",
+      "file_sha256": "615983e3ba39f7bec909edbf88fb7a1bd51bfd003c7a089ba9589eb20bda3425",
+      "ranges": [
+        {
+          "line_start": 73,
+          "line_end": 84
+        },
+        {
+          "line_start": 98,
+          "line_end": 99
+        }
+      ],
+      "assertions": [
+        "state.json is a runtime cursor separate from world_model.json; re-entry reads the cursor first and resumes from its stage.",
+        "The stop hook validates state and artifacts and must be repaired rather than bypassed.",
+        "A stagnation window is an explicit parameter; the default formula keeps the window below max_rounds so stagnation can trigger before the round cap.",
+        "Local Refinement has its own stagnation window defaulting to two rounds."
+      ],
+      "used_by": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    },
+    {
+      "id": "live-npu-session-digest",
+      "kind": "offline_transcript",
+      "source_root": "mindie-003-execution",
+      "path": "agy-dsh-waves/wave7/inputs/offline_transcript_digest.md",
+      "file_sha256": "9204f6be8c973adc88c0238456ec60872cc18c072866c85d6c4ad9bbbb797dbd",
+      "assertions": [
+        "The session records a parallel operator/framework split, fast pre-model reproducers, background builds, service-readiness checks, and staged topology expansion.",
+        "It records explicit refusal to merge unverified subagent work, explicit reservation of another agent's host, and exact-commit/hash readback before distribution.",
+        "It is a redacted digest, not raw logs and not a controlled trial."
+      ],
+      "ranges": [
+        {
+          "line_start": 7,
+          "line_end": 15,
+          "assertions": [
+            "The operator work was split across parallel operator validation and an independent framework-review subagent.",
+            "The session distinguished framework tests that passed from outcomes still requiring real-machine full-network confirmation."
+          ]
+        },
+        {
+          "line_start": 21,
+          "line_end": 26,
+          "assertions": [
+            "Fast per-operator and per-layer reproducers ran before loading a very large single-machine model weight set.",
+            "The 16-expert, 93-layer small model was used as a cheaper precursor to the main multi-machine model.",
+            "Long kernel compilation continued in parallel while independent fast tests were executed."
+          ]
+        },
+        {
+          "line_start": 30,
+          "line_end": 36,
+          "assertions": [
+            "A started process was not treated as a healthy service; health check and first request were required.",
+            "The team switched from single-machine to multi-machine only after recording the remaining blockers, and kept operator packaging parallel."
+          ]
+        },
+        {
+          "line_start": 45,
+          "line_end": 49,
+          "assertions": [
+            "A draft PR was created while full-network acceptance was explicitly marked incomplete.",
+            "PR CI was not treated as acceptance evidence; service readiness and accuracy tests remained separate."
+          ]
+        },
+        {
+          "line_start": 53,
+          "line_end": 58,
+          "assertions": [
+            "A review correction required reusing the existing attention backend and CANN-provided operators instead of adding a parallel adapter/backend system.",
+            "The corrected change was pushed to an exact commit and the diff was the review surface."
+          ]
+        },
+        {
+          "line_start": 81,
+          "line_end": 84,
+          "assertions": [
+            "An interrupted subagent left an independent worktree with unmerged changes; the parent explicitly refused to merge or deploy it.",
+            "Another agent's assigned host was treated as reserved and not touched.",
+            "Profiling artifacts were kept under a run-specific path."
+          ]
+        },
+        {
+          "line_start": 88,
+          "line_end": 99,
+          "assertions": [
+            "The first blocking failure was isolated to the first HCCL PP P2P link, before request processing or DSpark replay.",
+            "A two-node, 16-expert, 93-layer minimal reproducer was used to isolate the failure.",
+            "Expansion to a larger topology was refused until 4P+4D passed; a later success was recorded with exact source revisions and file hashes."
+          ]
+        },
+        {
+          "line_start": 103,
+          "line_end": 108,
+          "assertions": [
+            "The verified 4P+4D baseline was distributed to the cluster and the private PR was updated with launch scripts, image IDs, configuration, and reproduction steps.",
+            "Rejected static-kernel work was explicitly excluded from the distributed baseline.",
+            "Historical EP32 and EP64 configs were kept separate rather than blended into one claim."
+          ]
+        }
+      ],
+      "redactions": [
+        "The digest contains redacted and some raw host, credential, user, and path fields. No such value is copied into this record or into a unit body; assertions are paraphrased."
+      ],
+      "used_by": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "atomic-lease-required",
+      "statement": "Device, port, worktree, and /tmp state allocation must be acquired as one lease; a check-then-bind sequence is racy on a shared cluster.",
+      "unit_id": "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "evidence_strength": "software_contract",
+      "supporting_sources": [
+        "a3-dual-die-package",
+        "a3-phy-id-logical-map",
+        "logical-device-mapping",
+        "rendezvous-port-domains",
+        "remote-device-isolation",
+        "exclusive-timing-lease",
+        "cannbot-git-worktree",
+        "live-npu-session-digest"
+      ],
+      "scope": "Ascend A2/A3 shared container clusters; prescriptive contract, not a measured collision rate."
+    },
+    {
+      "claim_id": "phy-id-resolution-required",
+      "statement": "On an A3 dual-die package the 16 die-level Phy-ID values and the 8 logical NPUs are different namespaces and must be resolved before container device binding.",
+      "unit_id": "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "evidence_strength": "software_contract",
+      "supporting_sources": [
+        "a3-dual-die-package",
+        "a3-phy-id-logical-map",
+        "logical-device-mapping"
+      ],
+      "scope": "A3 910C dual-die packages; the exact per-host mapping must be re-inventoried rather than assumed from this contract."
+    },
+    {
+      "claim_id": "scoped-remote-verification",
+      "statement": "A remote NPU patch should be isolated in a worktree, synced as a minimal diff, and exercised by fast operator/layer reproducers before full model startup.",
+      "unit_id": "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "evidence_strength": "reproduced_empirical",
+      "supporting_sources": [
+        "cannbot-git-worktree",
+        "cannbot-worktree-remote-sync",
+        "cannbot-remote-sync-loop",
+        "remote-device-isolation",
+        "live-npu-session-digest"
+      ],
+      "scope": "Recorded live NPU session; the digest is redacted and is not an independently controlled trial."
+    },
+    {
+      "claim_id": "bounded-jobs-and-three-valued-effects",
+      "statement": "Long builds and benchmarks need nested timeout budgets and a three-valued external-effect classification; exit status alone is not completion.",
+      "unit_id": "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "evidence_strength": "reproduced_empirical",
+      "supporting_sources": [
+        "mindie-timeout-hierarchy",
+        "mindie-terminal-effects",
+        "mindie-receipt-honesty",
+        "live-npu-session-digest"
+      ],
+      "scope": "Prescriptive contract plus recorded usage; no universal latency or success-rate claim."
+    },
+    {
+      "claim_id": "stagnation-native-subcontext",
+      "statement": "Three consecutive unimproved trials with no new fact should freeze the ledger and move the search into a fresh native subcontext that keeps L1/L2/L4 evidence and conditional_avoid but strips prior L3 workflows.",
+      "unit_id": "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+      "evidence_strength": "software_contract",
+      "supporting_sources": [
+        "mindie-stagnation-pack",
+        "mindie-ledger-c4",
+        "cannbot-ops-perf-evolution",
+        "cannbot-lingxi-evo"
+      ],
+      "scope": "MindIE Agent RSI exploration and CANNBot evolution-loop contracts; not an efficacy trial of exploration."
+    },
+    {
+      "claim_id": "four-stage-qualification",
+      "statement": "A stagnation-triggered candidate must pass compile, hidden-input five-category retention, profiler-backed speedup, and Contract C4 sequential ablation before it is distilled as an improvement.",
+      "unit_id": "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+      "evidence_strength": "software_contract",
+      "supporting_sources": [
+        "hidden-retention-five-categories",
+        "qualification-ladder",
+        "mindie-ledger-c4",
+        "mindie-timeout-hierarchy"
+      ],
+      "scope": "Prescriptive gate contract; no candidate in this distillation was executed against the gates."
+    }
+  ],
+  "privacy": {
+    "rule": "No internal IPs, usernames, user home directories, credentials, container passwords, or customer identifiers may appear in units or evidence.",
+    "checks": [
+      "private IPv4 ranges",
+      "user-home paths",
+      "username tokens",
+      "credential-like strings"
+    ],
+    "redactions_applied": [
+      "Cluster host addresses from the A3 standing-cluster contract are omitted.",
+      "The transcript digest is paraphrased; no raw host, credential, user, or workspace path is copied.",
+      "Repository locators use public or repository-relative identifiers, not SSH user/host strings."
+    ],
+    "scan_result": "clean"
+  },
+  "limitations": [
+    "The two requested CANNBot paths were not present at the inspected revision; the closest available evolution-loop, PR, worktree, and remote-development contracts were used and are explicitly named.",
+    "The offline transcript is a redacted session digest, not raw logs or an independently controlled reproduction. It supports procedural observations, not a measured speedup.",
+    "The L1 and L3 units are software-contract rules. They do not establish collision frequency, hardware behavior on every A3 SKU, or exploration efficacy.",
+    "The L2 unit is marked reproduced_empirical because the loop appears repeatedly in the recorded live session; this is not a formal controlled trial.",
+    "The exact A3 Phy-ID-to-logical mapping must be re-inventoried on each host; this record establishes the namespaces and the requirement to resolve them, not a universal fixed mapping.",
+    "No performance claim is made by any unit or by this evidence record."
+  ]
+}
