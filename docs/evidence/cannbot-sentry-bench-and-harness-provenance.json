@@ -1,0 +1,74 @@
+{
+  "schema": "mindie-agent-engineering-provenance/1",
+  "domain": "agent-engineering",
+  "generated_at_utc": "2026-10-21T04:26:00Z",
+  "purpose": "Provenance ledger for CANNBot-Sentry (sift, insight, cpx), CANN-Bench HAP evaluation and TaskUnit retry isolation, and CANNBot Harness workflow orchestration and rollback advice units.",
+  "source_repositories": [
+    {
+      "id": "cannbot-sentry",
+      "repository": "cann/cannbot-sentry",
+      "remote": "https://gitcode.com/cann/cannbot-sentry",
+      "revision": "c894c239444bce00cea23679de074df1fc4ed51d",
+      "files": [
+        {
+          "path": "packages/sift/README.md",
+          "sha256": "e79d1051fe52eaeac72092e8d3f587ee6dca75b2bb6a1613ff5fbf3e4c378182",
+          "line_ranges": ["5-250"],
+          "used_for": "Sift dual-rate evaluation, multi-scope transcript compliance audit, 5-state result-by-process calibration, post-hoc gate, and sift-records v2 provenance analysis"
+        },
+        {
+          "path": "packages/insight/README.md",
+          "sha256": "4b0e3f4552822fa5899ba6fbd9098db78347f0f11737a0c5974fa7636de41777",
+          "line_ranges": ["7-32"],
+          "used_for": "CANNBot-Insight session observability, active vs wall time 5-minute gap clustering, 6-dimension trajectory scoring, and multi-generation rollback DAG view"
+        },
+        {
+          "path": "packages/cpx/README.md",
+          "sha256": "a50bee7bb27233c4ba07ecf3d48974134ce4f8377816000af435d4136e7d9bba",
+          "line_ranges": ["5-213"],
+          "used_for": "cpx per-session wire capture proxy, zero-residue process config injection, dispatchEmit single-chokepoint credential redaction, and 7z at-rest compression"
+        }
+      ]
+    },
+    {
+      "id": "cann-bench",
+      "repository": "cann/cann-bench",
+      "remote": "https://gitcode.com/cann/cann-bench",
+      "revision": "2d7cd332247f33a66ca67c77d9f09d446a780dfe",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "1efa2b3a9ad0e5f72d7b79f4e3cc7e10c49c9982673a1b68c0f44a6e071e4a8d",
+          "line_ranges": ["13-67"],
+          "used_for": "L1-L5 operator complexity curriculum, Hardware-Anchored Performance (HAP) formula and boundary conditions, and batch compile failure zeroing policy"
+        },
+        {
+          "path": "retry_design.md",
+          "sha256": "f3994b40848181a85511a78524af14d6200c253bf999d840f941511361899a6f",
+          "line_ranges": ["1-249"],
+          "used_for": "TaskUnit partial recovery, repeated-failure case quarantine (threshold 2), healthy-card retry selection, and logical-to-physical ASCEND_RT_VISIBLE_DEVICES mapping"
+        }
+      ]
+    },
+    {
+      "id": "cannbot",
+      "repository": "cann/cannbot",
+      "remote": "https://gitcode.com/cann/cannbot",
+      "revision": "d0f8c40ebc208fa17323781c89e4ec6ea16e4c52",
+      "files": [
+        {
+          "path": "harness/workflow-orchestrator/SKILL.md",
+          "sha256": "980f6c3981409af9e5cf8036e29012d9ef0105f99745773a2ea50027e13b8d73",
+          "line_ranges": ["7-84"],
+          "used_for": "Workflow orchestrator 4-input confirmation, link_agent_config preflight, detached tmux execution, and poll/approve task loop"
+        },
+        {
+          "path": "harness/workflow-rollback-advice/SKILL.md",
+          "sha256": "4e875e15e20f26dbdb863a326bb7207937aa3dd0156ad0a10ea1cbb31778f923",
+          "line_ranges": ["6-47"],
+          "used_for": "Read-only rollback root-cause analysis across .workflow/sessions JSONL crash trailers and .workflow/history snapshots"
+        }
+      ]
+    }
+  ]
+}
