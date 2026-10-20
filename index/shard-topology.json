@@ -1,5 +1,16 @@
 {
   "closure": {
+    "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
+    "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
     "unit-remote-npu-container-patch-and-long-job-verification-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -18,11 +29,14 @@
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 49610,
-      "estimated_tokens": 9260,
+      "bytes": 67112,
+      "estimated_tokens": 12412,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop",
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
         "unit-multi-agent-npu-lease-and-container-isolation-axioms",
         "unit-remote-npu-container-patch-and-long-job-verification-sop",
         "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
@@ -30,18 +44,21 @@
         "unit-superpowers-parallel-investigation-independence",
         "unit-superpowers-review-request-git-range"
       ],
-      "units": 6
+      "units": 9
     },
     "domains": [
       {
         "automatic": false,
-        "bytes": 49610,
-        "estimated_tokens": 9260,
+        "bytes": 67112,
+        "estimated_tokens": 12412,
         "exceeds": [],
         "kind": "federation",
         "path": "engineering",
         "recommended_action": "review_federation_boundary",
         "unit_ids": [
+          "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop",
+          "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow",
+          "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
           "unit-multi-agent-npu-lease-and-container-isolation-axioms",
           "unit-remote-npu-container-patch-and-long-job-verification-sop",
           "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
@@ -49,12 +66,38 @@
           "unit-superpowers-parallel-investigation-independence",
           "unit-superpowers-review-request-git-range"
         ],
-        "units": 6
+        "units": 9
       }
     ]
   },
-  "index_build_elapsed_ms": 2.0123340655118227,
+  "index_build_elapsed_ms": 3.538958029821515,
   "leaves": [
+    {
+      "automatic": false,
+      "bytes": 6553,
+      "estimated_tokens": 1203,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/audit-observability",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5730,
+      "estimated_tokens": 1031,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/benchmarking",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+      ],
+      "units": 1
+    },
     {
       "automatic": false,
       "bytes": 10009,
@@ -65,6 +108,19 @@
       "recommended_action": "review_leaf_split",
       "unit_ids": [
         "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5219,
+      "estimated_tokens": 918,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/orchestration",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
       ],
       "units": 1
     },
@@ -138,6 +194,32 @@
   "two_level_subtrees": [
     {
       "automatic": false,
+      "bytes": 6553,
+      "estimated_tokens": 1203,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/audit-observability",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5730,
+      "estimated_tokens": 1031,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/benchmarking",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
       "bytes": 10009,
       "estimated_tokens": 1912,
       "exceeds": [],
@@ -146,6 +228,19 @@
       "recommended_action": "review_two_level_subtree_split",
       "unit_ids": [
         "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5219,
+      "estimated_tokens": 918,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/orchestration",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop"
       ],
       "units": 1
     },
@@ -215,8 +310,49 @@
       "units": 1
     }
   ],
-  "unit_count": 6,
+  "unit_count": 9,
   "units": {
+    "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": {
+      "bytes": 5730,
+      "category": "sop",
+      "content_sha256": "bd8c75354ddaa83282974baff4e7c990da0256025d0d3bd1c6cb59773ca6a45a",
+      "domain_path": "engineering/benchmarking",
+      "estimated_tokens": 1031,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "engineering/benchmarking/unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop.md",
+      "tier": "L2"
+    },
+    "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": {
+      "bytes": 6553,
+      "category": "workflow",
+      "content_sha256": "2819a9c4697129dc35020ade0d69e4961c64396fc1bf3ea1a312661115fcf829",
+      "domain_path": "engineering/audit-observability",
+      "estimated_tokens": 1203,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
+      "tier": "L3"
+    },
+    "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": {
+      "bytes": 5219,
+      "category": "sop",
+      "content_sha256": "8c2d645fa002687c0d173740649d51535b11f1b8d7b19eebdad992c0405f88c6",
+      "domain_path": "engineering/orchestration",
+      "estimated_tokens": 918,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
+      "tier": "L2"
+    },
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": {
       "bytes": 10009,
       "category": "axiom",

@@ -1,6 +1,17 @@
 {
-  "build_elapsed_ms": 2.0123340655118227,
+  "build_elapsed_ms": 3.538958029821515,
   "closure": {
+    "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
+    "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
     "unit-remote-npu-container-patch-and-long-job-verification-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -16,8 +27,11 @@
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "generation": "115d9d4e2ef00f03879e25937510dd9c48f1961ef8d7d2d6cfbe835db7fbc43d",
+  "generation": "f7499cff2985df660a84291ab9df1fb30515cf74c7fcb1cdb23fc0b10e3d434f",
   "id_path": {
+    "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": "engineering/benchmarking/unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop.md",
+    "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
+    "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
     "unit-remote-npu-container-patch-and-long-job-verification-sop": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
@@ -28,8 +42,166 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 6,
+  "unit_count": 9,
   "units": [
+    {
+      "category": "sop",
+      "conditions": {
+        "device_visibility_variable": "ASCEND_RT_VISIBLE_DEVICES",
+        "repository": "cann/cann-bench",
+        "revision": "2d7cd332247f33a66ca67c77d9f09d446a780dfe"
+      },
+      "domain_path": "engineering/benchmarking",
+      "evidence_strength": "software_contract",
+      "id": "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "path": "engineering/benchmarking/unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/README.md#L13-L67",
+          "https://gitcode.com/cann/cann-bench/blob/2d7cd332247f33a66ca67c77d9f09d446a780dfe/retry_design.md#L1-L249"
+        ],
+        "source_digest": "1efa2b3a9ad0e5f72d7b79f4e3cc7e10c49c9982673a1b68c0f44a6e071e4a8d",
+        "source_locator": "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "CANN-Bench Hardware-Anchored Performance (HAP) scoring, batch compile gate, and TaskUnit physical-device retry isolation SOP",
+      "token_estimate": 1031,
+      "triggers": {
+        "error_signatures": [
+          "Child process ASCEND_RT_VISIBLE_DEVICES=0 maps to physical card 0 instead of parent restricted device",
+          "Single operator build.sh failure zeroes entire multi-operator submission batch",
+          "Repeatedly hanging test case exhausts TaskUnit retry budget across NPU cards"
+        ],
+        "keywords": [
+          "cann-bench",
+          "HAP",
+          "Hardware-Anchored Performance",
+          "EachOperatorScore",
+          "TaskUnit",
+          "_physical_device_token_for_task",
+          "exclude_repeatedly_failed_cases",
+          "ASCEND_RT_VISIBLE_DEVICES"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "audit_scopes": [
+          "skill",
+          "agent",
+          "root"
+        ],
+        "repository": "cann/cannbot-sentry",
+        "revision": "c894c239444bce00cea23679de074df1fc4ed51d"
+      },
+      "domain_path": "engineering/audit-observability",
+      "evidence_strength": "software_contract",
+      "id": "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/sift/README.md#L5-L250",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/insight/README.md#L7-L32",
+          "https://gitcode.com/cann/cannbot-sentry/blob/c894c239444bce00cea23679de074df1fc4ed51d/packages/cpx/README.md#L5-L213"
+        ],
+        "source_digest": "e79d1051fe52eaeac72092e8d3f587ee6dca75b2bb6a1613ff5fbf3e4c378182",
+        "source_locator": "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Sentry dual-verification compliance audit (sift), wire-level single-chokepoint credential redaction (cpx), and session observability (insight) workflow",
+      "token_estimate": 1203,
+      "triggers": {
+        "error_signatures": [
+          "High outcome score with hard process compliance violation in calibration",
+          "Unredacted API key or Bearer token leaked into session capture JSONL",
+          "Trigger probe recall inflated by lexical copying of skill description"
+        ],
+        "keywords": [
+          "cannbot-sentry",
+          "sift",
+          "cannbot-insight",
+          "cpx",
+          "compliance audit",
+          "calibration",
+          "analyze_provenance",
+          "dispatchEmit",
+          "wire capture"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "repository": "cann/cannbot",
+        "revision": "d0f8c40ebc208fa17323781c89e4ec6ea16e4c52"
+      },
+      "domain_path": "engineering/orchestration",
+      "evidence_strength": "software_contract",
+      "id": "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-orchestrator/SKILL.md#L7-L84",
+          "https://gitcode.com/cann/cannbot/blob/d0f8c40ebc208fa17323781c89e4ec6ea16e4c52/harness/workflow-rollback-advice/SKILL.md#L6-L47"
+        ],
+        "source_digest": "980f6c3981409af9e5cf8036e29012d9ef0105f99745773a2ea50027e13b8d73",
+        "source_locator": "docs/evidence/cannbot-sentry-bench-and-harness-provenance.json",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Harness multi-stage workflow orchestration, approval gating, and read-only rollback advice SOP",
+      "token_estimate": 918,
+      "triggers": {
+        "error_signatures": [
+          "Unquoted workflow prompt with spaces or parentheses fails inside tmux new-session",
+          "Protocol-compatible provider selected instead of actual running agent CLI",
+          "Downstream workflow task exhausts retries and triggers rollback to upstream task"
+        ],
+        "keywords": [
+          "workflow-orchestrator",
+          "workflow-rollback-advice",
+          "orchestrator.py",
+          "link_agent_config.py",
+          "poll_workflow.py",
+          "approve_task.py",
+          "Rollback Advice"
+        ]
+      }
+    },
     {
       "category": "axiom",
       "conditions": {
