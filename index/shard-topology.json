@@ -1,49 +1,77 @@
 {
   "closure": {
+    "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
+    "unit-remote-npu-container-patch-and-long-job-verification-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence"
+    ],
     "unit-superpowers-claim-evidence-scope": [],
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "digest": "52e918c9d1ccbc196560baeda8937fdf7c4e34f3761224295bfff84ad3256ec4",
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 15930,
-      "estimated_tokens": 2646,
+      "bytes": 49610,
+      "estimated_tokens": 9260,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
         "unit-superpowers-claim-evidence-scope",
         "unit-superpowers-parallel-investigation-independence",
         "unit-superpowers-review-request-git-range"
       ],
-      "units": 3
+      "units": 6
     },
     "domains": [
       {
         "automatic": false,
-        "bytes": 15930,
-        "estimated_tokens": 2646,
+        "bytes": 49610,
+        "estimated_tokens": 9260,
         "exceeds": [],
         "kind": "federation",
         "path": "engineering",
         "recommended_action": "review_federation_boundary",
         "unit_ids": [
+          "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+          "unit-remote-npu-container-patch-and-long-job-verification-sop",
+          "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
           "unit-superpowers-claim-evidence-scope",
           "unit-superpowers-parallel-investigation-independence",
           "unit-superpowers-review-request-git-range"
         ],
-        "units": 3
+        "units": 6
       }
     ]
   },
-  "index_build_elapsed_ms": 0.7770420052111149,
-  "index_digest": "011f11e922474b3f395095c228e608d623d40be463dfb464402651138fcf145f",
+  "index_build_elapsed_ms": 2.0123340655118227,
   "leaves": [
     {
       "automatic": false,
-      "bytes": 5737,
-      "estimated_tokens": 946,
+      "bytes": 10009,
+      "estimated_tokens": 1912,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/npu-coordination",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5723,
+      "estimated_tokens": 942,
       "exceeds": [],
       "kind": "leaf",
       "path": "engineering/parallelism",
@@ -55,8 +83,21 @@
     },
     {
       "automatic": false,
-      "bytes": 5213,
-      "estimated_tokens": 863,
+      "bytes": 11593,
+      "estimated_tokens": 2319,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/remote-execution",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5199,
+      "estimated_tokens": 859,
       "exceeds": [],
       "kind": "leaf",
       "path": "engineering/review",
@@ -68,8 +109,21 @@
     },
     {
       "automatic": false,
-      "bytes": 4980,
-      "estimated_tokens": 837,
+      "bytes": 12474,
+      "estimated_tokens": 2483,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "engineering/rsi-exploration",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4612,
+      "estimated_tokens": 745,
       "exceeds": [],
       "kind": "leaf",
       "path": "engineering/verification",
@@ -84,8 +138,21 @@
   "two_level_subtrees": [
     {
       "automatic": false,
-      "bytes": 5737,
-      "estimated_tokens": 946,
+      "bytes": 10009,
+      "estimated_tokens": 1912,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/npu-coordination",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5723,
+      "estimated_tokens": 942,
       "exceeds": [],
       "kind": "subtree",
       "path": "engineering/parallelism",
@@ -97,8 +164,21 @@
     },
     {
       "automatic": false,
-      "bytes": 5213,
-      "estimated_tokens": 863,
+      "bytes": 11593,
+      "estimated_tokens": 2319,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/remote-execution",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-remote-npu-container-patch-and-long-job-verification-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 5199,
+      "estimated_tokens": 859,
       "exceeds": [],
       "kind": "subtree",
       "path": "engineering/review",
@@ -110,8 +190,21 @@
     },
     {
       "automatic": false,
-      "bytes": 4980,
-      "estimated_tokens": 837,
+      "bytes": 12474,
+      "estimated_tokens": 2483,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "engineering/rsi-exploration",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 4612,
+      "estimated_tokens": 745,
       "exceeds": [],
       "kind": "subtree",
       "path": "engineering/verification",
@@ -122,36 +215,76 @@
       "units": 1
     }
   ],
-  "unit_count": 3,
+  "unit_count": 6,
   "units": {
-    "unit-superpowers-claim-evidence-scope": {
-      "bytes": 4980,
+    "unit-multi-agent-npu-lease-and-container-isolation-axioms": {
+      "bytes": 10009,
+      "category": "axiom",
+      "content_sha256": "d2d0adf69ca6f94bbda214760e5cb3d8648a5ac7c73b4d3b33b871c4ba8a184e",
+      "domain_path": "engineering/npu-coordination",
+      "estimated_tokens": 1912,
+      "evidence_strength": "software_contract",
+      "inherits_from": [],
+      "path": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
+      "tier": "L1"
+    },
+    "unit-remote-npu-container-patch-and-long-job-verification-sop": {
+      "bytes": 11593,
       "category": "sop",
-      "content_sha256": "4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
+      "content_sha256": "15fc5c3cb5db9c90c61a1702eeee7c0b555fb781238d5bcf5bfbdabaedaf10c3",
+      "domain_path": "engineering/remote-execution",
+      "estimated_tokens": 2319,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
+      "tier": "L2"
+    },
+    "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": {
+      "bytes": 12474,
+      "category": "workflow",
+      "content_sha256": "95069eec156180012790d7a4fcefd6a8e5d5ef796d936ab65bb80b7f9a5ce339",
+      "domain_path": "engineering/rsi-exploration",
+      "estimated_tokens": 2483,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "path": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
+      "tier": "L3"
+    },
+    "unit-superpowers-claim-evidence-scope": {
+      "bytes": 4612,
+      "category": "sop",
+      "content_sha256": "074615abdeab5e4a1608ca35dde4e68aa8c051a33a98ae130cd3880cf80b92da",
       "domain_path": "engineering/verification",
-      "estimated_tokens": 837,
+      "estimated_tokens": 745,
       "evidence_strength": "single_observation",
       "inherits_from": [],
       "path": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
       "tier": "L2"
     },
     "unit-superpowers-parallel-investigation-independence": {
-      "bytes": 5737,
+      "bytes": 5723,
       "category": "sop",
-      "content_sha256": "c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
+      "content_sha256": "00fe533685770f48383a3ff904def50a6181a6ebf1985d4f1c5dc703a32635d2",
       "domain_path": "engineering/parallelism",
-      "estimated_tokens": 946,
+      "estimated_tokens": 942,
       "evidence_strength": "single_observation",
       "inherits_from": [],
       "path": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
       "tier": "L2"
     },
     "unit-superpowers-review-request-git-range": {
-      "bytes": 5213,
+      "bytes": 5199,
       "category": "sop",
-      "content_sha256": "9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
+      "content_sha256": "e2f5a66a72ba4d26fd1e2b89d96a9890babda8527ea3aae37e1d2a82d8f5bd73",
       "domain_path": "engineering/review",
-      "estimated_tokens": 863,
+      "estimated_tokens": 859,
       "evidence_strength": "single_observation",
       "inherits_from": [],
       "path": "engineering/review/unit-superpowers-review-request-git-range.md",

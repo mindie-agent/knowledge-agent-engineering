@@ -43,7 +43,7 @@ triggers:
 ---
 At the pinned Superpowers revision, the requester supplies a description, requirements and a base/head diff to a separate reviewer, then triages Critical, Important and Minor findings. The reviewer template asks for file-and-line findings that explain defect, impact and repair, followed by a reasoned merge assessment. The intended history isolation is a written workflow rule; these two documents do not implement process or context isolation. The caller's five-field list omits PLAN_REFERENCE, which is a sixth distinct literal used by the template. A caller integrating this template must resolve both plan fields and bind the Git range to the actual work being reviewed. The supplied HEAD~1 example compares committed trees and does not include uncommitted edits.
 
-Reviewed limits and corrections:
+Scope and caveats:
 
 - The extra template field is PLAN_REFERENCE; PLAN_OR_REQUIREMENTS already appears in both documents. Do not claim it is absent from the reviewer template.
 - Giving feedback only on reviewed code does not forbid reading unchanged callers, schemas or dependencies. A diff is the supplied entry point, not a stated read confinement boundary.

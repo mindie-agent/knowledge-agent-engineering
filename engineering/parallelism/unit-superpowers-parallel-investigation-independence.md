@@ -41,7 +41,7 @@ triggers:
 ---
 The Superpowers document first separates unrelated problems from coupled failures, then checks whether shared state makes concurrent work interfere. Its task brief gives each investigator a narrow scope, goal, edit constraints and required return summary. After workers return, the coordinator reviews findings, checks overlapping edits, verifies integration and spot-checks the changes. This is a prescriptive coordination procedure, not a scheduler implementation. The text asks for isolated context but provides no isolation primitive, concurrency budget, timeout, cancellation or conflict-resolution mechanism. The same-file or same-resource exclusion is more actionable than assigning one agent to every failing test file.
 
-Reviewed limits and corrections:
+Scope and caveats:
 
 - The graph explicitly routes related failures to one investigator and shared-state cases to sequential agents. It has no negative edge from the initial multiple-failures node; do not invent an executable decision algorithm.
 - The frontmatter's 2+ independent tasks and the example condition of 3+ failing test files describe different units of work. Preserve the wording without asserting a proven numerical contradiction.

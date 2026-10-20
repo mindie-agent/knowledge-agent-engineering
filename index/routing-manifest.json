@@ -1,13 +1,26 @@
 {
-  "build_elapsed_ms": 0.7770420052111149,
+  "build_elapsed_ms": 2.0123340655118227,
   "closure": {
+    "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
+    "unit-remote-npu-container-patch-and-long-job-verification-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope"
+    ],
+    "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence"
+    ],
     "unit-superpowers-claim-evidence-scope": [],
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "digest": "011f11e922474b3f395095c228e608d623d40be463dfb464402651138fcf145f",
-  "generation": "8d6c718adbfeb4efa01dcca4a5640fa0d2ef147434d1bc40da25c7b9f56301d6",
+  "generation": "115d9d4e2ef00f03879e25937510dd9c48f1961ef8d7d2d6cfbe835db7fbc43d",
   "id_path": {
+    "unit-multi-agent-npu-lease-and-container-isolation-axioms": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
+    "unit-remote-npu-container-patch-and-long-job-verification-sop": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
+    "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
     "unit-superpowers-claim-evidence-scope": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
     "unit-superpowers-parallel-investigation-independence": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
     "unit-superpowers-review-request-git-range": "engineering/review/unit-superpowers-review-request-git-range.md"
@@ -15,17 +28,237 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 3,
+  "unit_count": 6,
   "units": [
     {
+      "category": "axiom",
+      "conditions": {
+        "a3_dual_die_topology": "8_logical_npus_x_2_dies",
+        "accelerator_family": "Ascend A2/A3",
+        "device_visibility_variable": "ASCEND_RT_VISIBLE_DEVICES",
+        "execution_surface": "shared_container_cluster",
+        "isolation_required": [
+          "git_worktree",
+          "tmp_state_directory"
+        ],
+        "rendezvous_variables": [
+          "MASTER_PORT",
+          "HCCL_IF_BASE_PORT"
+        ]
+      },
+      "domain_path": "engineering/npu-coordination",
+      "evidence_strength": "software_contract",
+      "id": "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/agent-engineering-npu-provenance.json",
+          "cannbot-knowledge@7ea0efbeb79f2559f121fa8514a9fe5c82245807:knowledge/common/platforms/concepts/target_ascend910c.md",
+          "mindie-bench@c42493d6ff916debf2967b76adace62113b41340:AGENTS.md",
+          "msagent@521f8ead0ebda5db5b282f0c3c4147006e01e016:skills/quantizer/msmodelslim-adapter-verification/references/verification_guide.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:model/model-infer-parallel-impl/references/standalone_parallel.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/collaborative-agent-kernel-evolution/skills/remote-cann-development/SKILL.md",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:plugins/mindie-agent/skills/mindie-agent/references/domain-skills.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md"
+        ],
+        "source_digest": "d36d173738cc47863d74fddd3772ae381c78503f1884822f02d16add39adda1b",
+        "source_locator": "docs/evidence/agent-engineering-npu-provenance.json",
+        "source_type": "derived_software_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "Lease NPU devices, ports, worktrees, and state atomically across agents",
+      "token_estimate": 1912,
+      "triggers": {
+        "error_signatures": [
+          "ASCEND_RT_VISIBLE_DEVICES",
+          "MASTER_PORT",
+          "HCCL_IF_BASE_PORT",
+          "address already in use",
+          "HcclCommInitRootInfoConfig",
+          "507033",
+          "ACL_ERROR_RT_DEV_PERMISSION_DENIED",
+          "device is occupied"
+        ],
+        "keywords": [
+          "multi-agent",
+          "npu lease",
+          "device isolation",
+          "container isolation",
+          "Phy-ID",
+          "logical NPU",
+          "A3 dual-die",
+          "git worktree",
+          "tmp state",
+          "port collision",
+          "rendezvous",
+          "exclusive timing lease"
+        ]
+      }
+    },
+    {
       "category": "sop",
-      "closure_digest": "sha256:4cb034b2ee89db19c0f62aaa5cd0fa342273c135f5bb58da553ff7c7a8d65033",
+      "conditions": {
+        "execution_surface": "remote_npu_container",
+        "job_execution": "background_with_timeout_budget",
+        "source_control": "git_worktree",
+        "terminal_effect_classes": [
+          "completed",
+          "failed",
+          "unknown"
+        ],
+        "verification_scope": "affected_scope"
+      },
+      "domain_path": "engineering/remote-execution",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "path": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/agent-engineering-npu-provenance.json",
+          "mindie-003-execution@9204f6be8c973adc88c0238456ec60872cc18c072866c85d6c4ad9bbbb797dbd:agy-dsh-waves/wave7/inputs/offline_transcript_digest.md",
+          "mindie-bench@c42493d6ff916debf2967b76adace62113b41340:AGENTS.md",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:AGENTS.md",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:plugins/mindie-agent/skills/mindie-agent/references/domain-skills.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/collaborative-agent-kernel-evolution/skills/remote-cann-development/SKILL.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/collaborative-agent-kernel-evolution/skills/git-version-management/SKILL.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:infra/gitcode-pr-handler/SKILL.md"
+        ],
+        "source_digest": "d36d173738cc47863d74fddd3772ae381c78503f1884822f02d16add39adda1b",
+        "source_locator": "docs/evidence/agent-engineering-npu-provenance.json",
+        "source_type": "offline_transcript_and_software_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Patch and verify remote NPU containers in affected scope with bounded jobs",
+      "token_estimate": 2319,
+      "triggers": {
+        "error_signatures": [
+          "timeout",
+          "UnknownExternalEffects",
+          "in_flight_runs",
+          "exit code 137",
+          "SIGKILL",
+          "rsync failed",
+          "git apply failed",
+          "health check failed",
+          "SSH connection lost"
+        ],
+        "keywords": [
+          "remote NPU",
+          "container",
+          "git worktree",
+          "minimal diff",
+          "fast reproducer",
+          "single layer",
+          "long build",
+          "background job",
+          "timeout budget",
+          "cleanup grace",
+          "completed",
+          "failed",
+          "unknown",
+          "external effects"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "native_context_isolation": "required",
+        "optimization_mode": "rsi_exploration",
+        "qualification_gates": [
+          "G0_compile",
+          "G1_hidden_input_5_category",
+          "G2_profiler_speedup",
+          "G3_contract_c4_sequential_ablation"
+        ],
+        "stagnation_threshold": "3_consecutive_unimproved_trials",
+        "subagent_pack_schema": "mindie-rsi-subagent-pack/1"
+      },
+      "domain_path": "engineering/rsi-exploration",
+      "evidence_strength": "software_contract",
+      "id": "unit-stagnation-triggered-debiased-subcontext-exploration-workflow",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "path": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "docs/evidence/agent-engineering-npu-provenance.json",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:plugins/mindie-agent/skills/mindie-agent/SKILL.md",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:plugins/mindie-agent/skills/mindie-agent/references/domain-skills.md",
+          "mindie-agent-codex@24049537746b23f9a5fc91412319a73488857a8e:plugins/mindie-agent/skills/mindie-agent/references/diagnostic-reasoning.md",
+          "mindie-bench@c42493d6ff916debf2967b76adace62113b41340:AGENTS.md",
+          "knowledge-operators@worktree-snapshot-20261021:Reduction/unit-vectorized-bf16-fp32-accumulation-cast-fusion-mutator.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/ops-perf-evolution/AGENTS.md",
+          "cannbot-skills@1fa2cbbc9fdddb4377ca26734e9b94d91c42b975:plugins-community/ops-perf-evolution/agents/lingxi-evo.md"
+        ],
+        "source_digest": "d36d173738cc47863d74fddd3772ae381c78503f1884822f02d16add39adda1b",
+        "source_locator": "docs/evidence/agent-engineering-npu-provenance.json",
+        "source_type": "software_contract_and_plugin_snapshot",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Break optimization stagnation with a de-biased native subcontext",
+      "token_estimate": 2483,
+      "triggers": {
+        "error_signatures": [
+          "stagnation",
+          "no improvement",
+          "three consecutive unimproved",
+          "assess_stagnation",
+          "conditional_avoid",
+          "pruned_combination_verified",
+          "candidate_for_sequential_pruning",
+          "opt_regression",
+          "evaluation_error"
+        ],
+        "keywords": [
+          "RSI",
+          "exploration",
+          "stagnation",
+          "de-biased",
+          "native subcontext",
+          "subagent pack",
+          "mindie-rsi-subagent-pack/1",
+          "L1 foundation",
+          "L2 bottleneck",
+          "L4 mutator",
+          "leave-one-out ablation",
+          "sequential ablation",
+          "hidden inputs",
+          "knowledge flywheel"
+        ]
+      }
+    },
+    {
+      "category": "sop",
       "conditions": {
         "repository": "obra/superpowers",
         "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
       },
-      "content_digest": "sha256:4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
-      "content_sha256": "4f9b2a5eaebf13ce63e34dfe78f4c7d7761f4d48534e10663f5a116eb6fb3564",
       "domain_path": "engineering/verification",
       "evidence_strength": "single_observation",
       "id": "unit-superpowers-claim-evidence-scope",
@@ -49,7 +282,7 @@
       "revision": 1,
       "tier": "L2",
       "title": "Match completion claims to observable evidence and its scope",
-      "token_estimate": 837,
+      "token_estimate": 745,
       "triggers": {
         "error_signatures": [],
         "keywords": [
@@ -68,13 +301,10 @@
     },
     {
       "category": "sop",
-      "closure_digest": "sha256:9c157f42801fbc5ccdb79d466302bf11b273be3a1e5e80d9a985b02dd049c9c2",
       "conditions": {
         "repository": "obra/superpowers",
         "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
       },
-      "content_digest": "sha256:c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
-      "content_sha256": "c6b8b13788257f439d2617f2d19dffb9c873f124af383e23edcc10cab909be22",
       "domain_path": "engineering/parallelism",
       "evidence_strength": "single_observation",
       "id": "unit-superpowers-parallel-investigation-independence",
@@ -100,7 +330,7 @@
       "revision": 1,
       "tier": "L2",
       "title": "Partition parallel investigations by independence and shared resources",
-      "token_estimate": 946,
+      "token_estimate": 942,
       "triggers": {
         "error_signatures": [],
         "keywords": [
@@ -118,13 +348,10 @@
     },
     {
       "category": "sop",
-      "closure_digest": "sha256:6492c81d191d81f29c2b917fb125a21d51cedad0da99107bfb29db70af515764",
       "conditions": {
         "repository": "obra/superpowers",
         "revision": "b7a8f76985f1e93e75dd2f2a3b424dc731bd9d37"
       },
-      "content_digest": "sha256:9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
-      "content_sha256": "9c3e73d5806b3ea7fb49cfd696f7918027f163d8a4e24ca6e29ea9be2768f5cd",
       "domain_path": "engineering/review",
       "evidence_strength": "single_observation",
       "id": "unit-superpowers-review-request-git-range",
@@ -149,7 +376,7 @@
       "revision": 1,
       "tier": "L2",
       "title": "Bind a review request to a work product and explicit Git range",
-      "token_estimate": 863,
+      "token_estimate": 859,
       "triggers": {
         "error_signatures": [],
         "keywords": [
