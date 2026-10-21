@@ -1,6 +1,10 @@
 {
-  "build_elapsed_ms": 8.076166035607457,
+  "build_elapsed_ms": 16.298583010211587,
   "closure": {
+    "unit-aisbench-rbf-kernel-herding-coreset-compression-sop": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+    ],
     "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": [
       "unit-superpowers-claim-evidence-scope"
     ],
@@ -16,6 +20,10 @@
       "unit-superpowers-claim-evidence-scope",
       "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
     ],
+    "unit-auto-bug-fixer-git-bisect-and-risk-coverage-test-gen-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-superpowers-review-request-git-range"
+    ],
     "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop"
@@ -25,6 +33,21 @@
     ],
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms"
+    ],
+    "unit-cann-model-infer-optimize-role-isolation-and-progress-relay-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+      "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+    ],
+    "unit-cann-sota-approach-plan-loop-and-three-file-state-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+      "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+      "unit-remote-npu-container-patch-and-long-job-verification-sop",
+      "unit-superpowers-parallel-investigation-independence",
+      "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
     ],
     "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -67,6 +90,26 @@
       "unit-superpowers-claim-evidence-scope",
       "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
     ],
+    "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+      "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+      "unit-superpowers-review-request-git-range"
+    ],
+    "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+      "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+    ],
+    "unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+    ],
+    "unit-msverl-regression-triage-and-issue-faq-synthesis-workflow": [
+      "unit-superpowers-parallel-investigation-independence"
+    ],
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": [],
     "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": [
       "unit-superpowers-claim-evidence-scope"
@@ -80,6 +123,11 @@
       "unit-superpowers-claim-evidence-scope",
       "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow"
     ],
+    "unit-skill-auditor-six-step-security-vetting-and-red-flags-sop": [
+      "unit-superpowers-claim-evidence-scope",
+      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms",
+      "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop"
+    ],
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope",
@@ -90,14 +138,18 @@
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "generation": "7331894c90f4fd88a1bd70949894b96b80a88c4f005e54cde5be825ca7589e51",
+  "generation": "e96ec907b591ad47c8f38ad3038bd54a06323ff9083e242e4aaa4824f5bd9588",
   "id_path": {
+    "unit-aisbench-rbf-kernel-herding-coreset-compression-sop": "evaluation/aisbench/coreset-compression/rbf-kernel-herding-hidden-state-selection/unit-aisbench-rbf-kernel-herding-coreset-compression-sop.md",
     "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer/unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms.md",
     "unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator": "orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md",
     "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop": "governance/okf-and-contracts/card-schemas-and-vv-cv/vv-cv-and-skill-contracts/unit-ascendc-vv-cv-operator-and-skill-governance-check-sop.md",
+    "unit-auto-bug-fixer-git-bisect-and-risk-coverage-test-gen-sop": "engineering/debugging-and-testing/bug-fix-and-test-gen/git-bisect-patch-and-risk-coverage-pyramid/unit-auto-bug-fixer-git-bisect-and-risk-coverage-test-gen-sop.md",
     "unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop": "evaluation/cann-bench/hap-and-curriculum/anti-reward-hacking-and-retry/unit-cann-bench-anti-reward-hacking-verifier-and-taskunit-retry-sop.md",
     "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms": "evaluation/cann-bench/hap-and-curriculum/hap-metric-and-curriculum-axioms/unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms.md",
     "unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop": "engineering/benchmarking/unit-cann-bench-hap-scoring-batch-compile-and-taskunit-retry-sop.md",
+    "unit-cann-model-infer-optimize-role-isolation-and-progress-relay-workflow": "orchestration/cann-recipes-infer/model-infer-optimize/stage-gated-role-isolation-and-progress-relay/unit-cann-model-infer-optimize-role-isolation-and-progress-relay-workflow.md",
+    "unit-cann-sota-approach-plan-loop-and-three-file-state-workflow": "orchestration/cann-recipes-infer/sota-approach/plan-self-loop-and-three-file-state-spindle/unit-cann-sota-approach-plan-loop-and-three-file-state-workflow.md",
     "unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow": "engineering/audit-observability/unit-cannbot-sentry-sift-insight-cpx-audit-and-wire-redaction-workflow.md",
     "unit-controlled-code-perturbation-and-evolution-strategy-workflow": "orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md",
     "unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop": "audit/sentry-sift-insight/credential-chokepoint-cpx/proxy-capture-and-7z-lifecycle/unit-cpx-multi-protocol-sse-capture-and-7z-archive-sop.md",
@@ -107,10 +159,15 @@
     "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow": "orchestration/harness-and-evolution/state-machine-and-rollback/workflow-dag-and-approval-loop/unit-harness-workflow-dag-state-machine-and-approval-gate-workflow.md",
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
     "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md",
+    "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow": "orchestration/upstream-migration/megatron-to-mindspeed/change-event-impact-map-and-patch-package/unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow.md",
+    "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": "orchestration/msagent-quantizer/tuning-orchestrator/msagent-io-v1-ep-routing-and-herding-coreset/unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow.md",
+    "unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop": "governance/msagent-runtime/tool-skill-filtering/two-layer-pattern-grammar-and-least-privilege/unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop.md",
+    "unit-msverl-regression-triage-and-issue-faq-synthesis-workflow": "engineering/ci-triage/msverl-and-faq/log-tail-commit-ranking-and-issue-faq-pipeline/unit-msverl-regression-triage-and-issue-faq-synthesis-workflow.md",
     "unit-multi-agent-npu-lease-and-container-isolation-axioms": "engineering/npu-coordination/unit-multi-agent-npu-lease-and-container-isolation-axioms.md",
     "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms": "governance/okf-and-contracts/card-schemas-and-vv-cv/okf-bundle-and-trust-lifecycle/unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms.md",
     "unit-remote-npu-container-patch-and-long-job-verification-sop": "engineering/remote-execution/unit-remote-npu-container-patch-and-long-job-verification-sop.md",
     "unit-sift-five-state-compliance-and-result-process-calibration-sop": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/sift-compliance-and-calibration/unit-sift-five-state-compliance-and-result-process-calibration-sop.md",
+    "unit-skill-auditor-six-step-security-vetting-and-red-flags-sop": "governance/skill-security/skill-auditor/six-step-vetting-and-exfiltration-red-flags/unit-skill-auditor-six-step-security-vetting-and-red-flags-sop.md",
     "unit-stagnation-triggered-debiased-subcontext-exploration-workflow": "engineering/rsi-exploration/unit-stagnation-triggered-debiased-subcontext-exploration-workflow.md",
     "unit-superpowers-claim-evidence-scope": "engineering/verification/unit-superpowers-claim-evidence-scope.md",
     "unit-superpowers-parallel-investigation-independence": "engineering/parallelism/unit-superpowers-parallel-investigation-independence.md",
@@ -119,8 +176,56 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 23,
+  "unit_count": 32,
   "units": [
+    {
+      "category": "sop",
+      "conditions": {
+        "domain": "evaluation",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "evaluation/aisbench/coreset-compression/rbf-kernel-herding-hidden-state-selection",
+      "evidence_strength": "software_contract",
+      "id": "unit-aisbench-rbf-kernel-herding-coreset-compression-sop",
+      "inherits_from": [
+        "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-cann-bench-hap-saturation-and-five-level-curriculum-axioms"
+      ],
+      "path": "evaluation/aisbench/coreset-compression/rbf-kernel-herding-hidden-state-selection/unit-aisbench-rbf-kernel-herding-coreset-compression-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/msagent/blob/521f8ead0ebda5db5b282f0c3c4147006e01e016/skills/benchmark/aisbench-dataset-compression-herding/SKILL.md#L1-L321"
+        ],
+        "source_locator": "Ascend/msagent@521f8ead0ebda5db5b282f0c3c4147006e01e016:skills/benchmark/aisbench-dataset-compression-herding/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "AISBench Evaluation Coreset Compression: Hidden-State Extraction and RBF Kernel Herding SOP",
+      "token_estimate": 861,
+      "triggers": {
+        "error_signatures": [
+          "herding_coreset_selector",
+          "python -m herding",
+          "vllm_api_general_chat"
+        ],
+        "keywords": [
+          "aisbench",
+          "coreset",
+          "rbf-kernel-herding",
+          "dataset-compression",
+          "aime2025",
+          "gpqa"
+        ]
+      }
+    },
     {
       "category": "axiom",
       "conditions": {
@@ -288,6 +393,58 @@
     {
       "category": "sop",
       "conditions": {
+        "domain": "engineering",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "engineering/debugging-and-testing/bug-fix-and-test-gen/git-bisect-patch-and-risk-coverage-pyramid",
+      "evidence_strength": "software_contract",
+      "id": "unit-auto-bug-fixer-git-bisect-and-risk-coverage-test-gen-sop",
+      "inherits_from": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-superpowers-review-request-git-range"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-superpowers-review-request-git-range"
+      ],
+      "path": "engineering/debugging-and-testing/bug-fix-and-test-gen/git-bisect-patch-and-risk-coverage-pyramid/unit-auto-bug-fixer-git-bisect-and-risk-coverage-test-gen-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/auto-bug-fixer/SKILL.md#L1-L140",
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/auto-develop-test-gen/SKILL.md#L1-L122"
+        ],
+        "source_locator": "Ascend/agent-skills@942f0138aa9c78467507babb09aa9c64c5f534dc:skills/auto-bug-fixer/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Automated Bug Root-Cause Localization (E001-E004 Gates) and Risk-Coverage Unit Test Generation SOP",
+      "token_estimate": 905,
+      "triggers": {
+        "error_signatures": [
+          "E001",
+          "E002",
+          "E003",
+          "E004",
+          "git bisect bad"
+        ],
+        "keywords": [
+          "auto-bug-fixer",
+          "auto-develop-test-gen",
+          "git-bisect",
+          "risk-coverage",
+          "given-when-then",
+          "regression-test"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
         "benchmark_suite": "CANN-Bench",
         "repository": "cann/cann-bench",
         "revision": "2d7cd332247f33a66ca67c77d9f09d446a780dfe",
@@ -427,6 +584,109 @@
           "_physical_device_token_for_task",
           "exclude_repeatedly_failed_cases",
           "ASCEND_RT_VISIBLE_DEVICES"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "domain": "orchestration",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "orchestration/cann-recipes-infer/model-infer-optimize/stage-gated-role-isolation-and-progress-relay",
+      "evidence_strength": "software_contract",
+      "id": "unit-cann-model-infer-optimize-role-isolation-and-progress-relay-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+        "unit-superpowers-claim-evidence-scope"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+      ],
+      "path": "orchestration/cann-recipes-infer/model-infer-optimize/stage-gated-role-isolation-and-progress-relay/unit-cann-model-infer-optimize-role-isolation-and-progress-relay-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/cann/cann-recipes-infer/blob/3c9266727c2a25bd17d503ad37d189a134ff364b/docs/agent/model-infer-optimize-design.md#L1-L250"
+        ],
+        "source_locator": "cann/cann-recipes-infer@3c9266727c2a25bd17d503ad37d189a134ff364b:docs/agent/model-infer-optimize-design.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "CANN Model-Infer-Optimize Multi-Agent Workflow: Seven-Stage Pipeline, Four-Role Isolation, and Two-Zone progress.md Relay",
+      "token_estimate": 1120,
+      "triggers": {
+        "error_signatures": [
+          "model-infer-optimize",
+          "progress_history.md",
+          "baseline_metadata.json"
+        ],
+        "keywords": [
+          "model-infer-optimize",
+          "role-isolation",
+          "progress-md-relay",
+          "analyzer-implementer-reviewer",
+          "cann-recipes-infer"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "domain": "orchestration",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "orchestration/cann-recipes-infer/sota-approach/plan-self-loop-and-three-file-state-spindle",
+      "evidence_strength": "software_contract",
+      "id": "unit-cann-sota-approach-plan-loop-and-three-file-state-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+        "unit-remote-npu-container-patch-and-long-job-verification-sop",
+        "unit-superpowers-parallel-investigation-independence",
+        "unit-stagnation-triggered-debiased-subcontext-exploration-workflow"
+      ],
+      "path": "orchestration/cann-recipes-infer/sota-approach/plan-self-loop-and-three-file-state-spindle/unit-cann-sota-approach-plan-loop-and-three-file-state-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/cann/cann-recipes-infer/blob/3c9266727c2a25bd17d503ad37d189a134ff364b/docs/agent/sota-approach-skill-design.md#L1-L430"
+        ],
+        "source_locator": "cann/cann-recipes-infer@3c9266727c2a25bd17d503ad37d189a134ff364b:docs/agent/sota-approach-skill-design.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "CANN SOTA-Approach Exploratory Optimization: Multi-Source Candidate Discovery, Plan Self-Loop, and Three-File State Spindle",
+      "token_estimate": 1274,
+      "triggers": {
+        "error_signatures": [
+          "model-infer-sota-approach",
+          "plan-dashboard.md",
+          "model-infer-perf-breakdown"
+        ],
+        "keywords": [
+          "model-infer-sota-approach",
+          "plan-dashboard",
+          "plan-self-loop",
+          "perf-breakdown",
+          "candidate-discovery"
         ]
       }
     },
@@ -893,6 +1153,207 @@
       }
     },
     {
+      "category": "workflow",
+      "conditions": {
+        "domain": "orchestration",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "orchestration/upstream-migration/megatron-to-mindspeed/change-event-impact-map-and-patch-package",
+      "evidence_strength": "software_contract",
+      "id": "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+        "unit-superpowers-review-request-git-range"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
+        "unit-superpowers-review-request-git-range"
+      ],
+      "path": "orchestration/upstream-migration/megatron-to-mindspeed/change-event-impact-map-and-patch-package/unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/megatron-change-analyzer/SKILL.md#L1-L99",
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/megatron-migration-generator/SKILL.md#L1-L89"
+        ],
+        "source_locator": "Ascend/agent-skills@942f0138aa9c78467507babb09aa9c64c5f534dc:skills/megatron-change-analyzer/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Upstream Megatron-LM to MindSpeed Migration: Feature Event Clustering, Impact Mapping, and Patch Package Workflow",
+      "token_estimate": 805,
+      "triggers": {
+        "error_signatures": [
+          "megatron-change-analyzer",
+          "megatron-impact-mapper",
+          "megatron-migration-generator",
+          "implementation_units"
+        ],
+        "keywords": [
+          "megatron-to-mindspeed",
+          "change-analyzer",
+          "impact-mapper",
+          "migration-generator",
+          "patch-series"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "domain": "orchestration",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "orchestration/msagent-quantizer/tuning-orchestrator/msagent-io-v1-ep-routing-and-herding-coreset",
+      "evidence_strength": "software_contract",
+      "id": "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow",
+      "inherits_from": [
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
+        "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow"
+      ],
+      "path": "orchestration/msagent-quantizer/tuning-orchestrator/msagent-io-v1-ep-routing-and-herding-coreset/unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/msagent/blob/521f8ead0ebda5db5b282f0c3c4147006e01e016/skills/quantizer/quantization-accuracy-tuning-orchestrator/SKILL.md#L1-L255",
+          "https://github.com/Ascend/msagent/blob/521f8ead0ebda5db5b282f0c3c4147006e01e016/skills/quantizer/quantization-accuracy-tuning-orchestrator/references/subagent_io_protocol.md#L1-L199"
+        ],
+        "source_locator": "Ascend/msagent@521f8ead0ebda5db5b282f0c3c4147006e01e016:skills/quantizer/quantization-accuracy-tuning-orchestrator/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "msagent Automated Quantization Orchestrator: MSAGENT_IO v1 Protocol, Multi-Card EP Routing, and Coreset Tuning Loop",
+      "token_estimate": 1129,
+      "triggers": {
+        "error_signatures": [
+          "msagent.subagent_io",
+          "msagent-io v1",
+          "VBENCH_ARGS_INVALID",
+          "[EP_CHECK]"
+        ],
+        "keywords": [
+          "quantization-accuracy-tuning-orchestrator",
+          "msagent-io-v1",
+          "ep-parallel-adaptation",
+          "apply-rollback",
+          "dit-quantization"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "domain": "governance",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "governance/msagent-runtime/tool-skill-filtering/two-layer-pattern-grammar-and-least-privilege",
+      "evidence_strength": "software_contract",
+      "id": "unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop",
+      "inherits_from": [
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "path": "governance/msagent-runtime/tool-skill-filtering/two-layer-pattern-grammar-and-least-privilege/unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/msagent/blob/521f8ead0ebda5db5b282f0c3c4147006e01e016/docs/zh/user_guide/agent-tool-skill-filter-rules.md#L1-L121",
+          "https://github.com/Ascend/msagent/blob/521f8ead0ebda5db5b282f0c3c4147006e01e016/AGENTS.md#L89-L138"
+        ],
+        "source_locator": "Ascend/msagent@521f8ead0ebda5db5b282f0c3c4147006e01e016:docs/zh/user_guide/agent-tool-skill-filter-rules.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindStudio Agent (msagent) Least-Privilege Governance: Tool/Skill Pattern Grammar and Two-Layer Enforcement SOP",
+      "token_estimate": 958,
+      "triggers": {
+        "error_signatures": [
+          "impl:deepagents:",
+          "use_catalog: false",
+          "AgentFactory.create"
+        ],
+        "keywords": [
+          "msagent",
+          "tool-filtering",
+          "skill-filtering",
+          "deepagents",
+          "least-privilege",
+          "model-call-middleware"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "domain": "engineering",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "engineering/ci-triage/msverl-and-faq/log-tail-commit-ranking-and-issue-faq-pipeline",
+      "evidence_strength": "software_contract",
+      "id": "unit-msverl-regression-triage-and-issue-faq-synthesis-workflow",
+      "inherits_from": [
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-parallel-investigation-independence"
+      ],
+      "path": "engineering/ci-triage/msverl-and-faq/log-tail-commit-ranking-and-issue-faq-pipeline/unit-msverl-regression-triage-and-issue-faq-synthesis-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/msverl-daily-regression-triage/SKILL.md#L1-L63",
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/vLLM-ascend_FAQ_Generator/SKILL.md#L1-L135"
+        ],
+        "source_locator": "Ascend/agent-skills@942f0138aa9c78467507babb09aa9c64c5f534dc:skills/msverl-daily-regression-triage/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "Daily CI Regression Triage (msverl) and Three-Agent Closed-Issue FAQ Synthesis Workflow",
+      "token_estimate": 966,
+      "triggers": {
+        "error_signatures": [
+          "mean abs diff:",
+          "error, please check log",
+          "accuracy_regression",
+          "train_error"
+        ],
+        "keywords": [
+          "msverl-daily-regression-triage",
+          "vllm-ascend-faq-generator",
+          "log-tail-extraction",
+          "commit-ranking",
+          "issue-classification"
+        ]
+      }
+    },
+    {
       "category": "axiom",
       "conditions": {
         "a3_dual_die_topology": "8_logical_npus_x_2_dies",
@@ -1132,6 +1593,55 @@
           "five-state calibration",
           "analyze_provenance five file dimensions",
           "BlindComparator"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "domain": "governance",
+        "hardware": [
+          "Ascend 910B",
+          "Ascend 910C"
+        ]
+      },
+      "domain_path": "governance/skill-security/skill-auditor/six-step-vetting-and-exfiltration-red-flags",
+      "evidence_strength": "software_contract",
+      "id": "unit-skill-auditor-six-step-security-vetting-and-red-flags-sop",
+      "inherits_from": [
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms",
+        "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-superpowers-claim-evidence-scope",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms",
+        "unit-ascendc-vv-cv-operator-and-skill-governance-check-sop"
+      ],
+      "path": "governance/skill-security/skill-auditor/six-step-vetting-and-exfiltration-red-flags/unit-skill-auditor-six-step-security-vetting-and-red-flags-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "https://github.com/Ascend/agent-skills/blob/942f0138aa9c78467507babb09aa9c64c5f534dc/skills/skill-auditor/SKILL.md#L1-L260"
+        ],
+        "source_locator": "Ascend/agent-skills@942f0138aa9c78467507babb09aa9c64c5f534dc:skills/skill-auditor/SKILL.md",
+        "source_type": "source_contract",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "Agent Skill Security Auditor: Six-Step Pre-Deployment Vetting, Permission Toxicity Matrix, and Exfiltration Red Flags SOP",
+      "token_estimate": 984,
+      "triggers": {
+        "error_signatures": [
+          "AGENT AUDIT REPORT",
+          "VERDICT: BLOCK",
+          "VERDICT: DANGEROUS"
+        ],
+        "keywords": [
+          "skill-auditor",
+          "typosquatting",
+          "prompt-injection",
+          "exfiltration-detection",
+          "permission-analysis"
         ]
       }
     },
