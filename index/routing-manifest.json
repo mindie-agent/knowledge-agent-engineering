@@ -1,5 +1,5 @@
 {
-  "build_elapsed_ms": 16.298583010211587,
+  "build_elapsed_ms": 18.735457997536287,
   "closure": {
     "unit-aisbench-rbf-kernel-herding-coreset-compression-sop": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
@@ -97,6 +97,11 @@
       "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
       "unit-superpowers-review-request-git-range"
     ],
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": [
+      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+      "unit-superpowers-claim-evidence-scope",
+      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+    ],
     "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope",
@@ -138,7 +143,7 @@
     "unit-superpowers-parallel-investigation-independence": [],
     "unit-superpowers-review-request-git-range": []
   },
-  "generation": "e96ec907b591ad47c8f38ad3038bd54a06323ff9083e242e4aaa4824f5bd9588",
+  "generation": "df4eefa3a7350560aae62b7b483fb9b125a8b29520e05344e6e3193abecd1323",
   "id_path": {
     "unit-aisbench-rbf-kernel-herding-coreset-compression-sop": "evaluation/aisbench/coreset-compression/rbf-kernel-herding-hidden-state-selection/unit-aisbench-rbf-kernel-herding-coreset-compression-sop.md",
     "unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms": "governance/okf-and-contracts/subword-retrieval-eval/identifier-subword-tokenizer/unit-ascend-identifier-subword-tokenization-and-accessor-strip-axioms.md",
@@ -160,6 +165,7 @@
     "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop": "engineering/orchestration/unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop.md",
     "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow": "audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md",
     "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow": "orchestration/upstream-migration/megatron-to-mindspeed/change-event-impact-map-and-patch-package/unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow.md",
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": "orchestration/mindie-sd-auto-opt/s0-s6-workflow/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
     "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": "orchestration/msagent-quantizer/tuning-orchestrator/msagent-io-v1-ep-routing-and-herding-coreset/unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow.md",
     "unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop": "governance/msagent-runtime/tool-skill-filtering/two-layer-pattern-grammar-and-least-privilege/unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop.md",
     "unit-msverl-regression-triage-and-issue-faq-synthesis-workflow": "engineering/ci-triage/msverl-and-faq/log-tail-commit-ranking-and-issue-faq-pipeline/unit-msverl-regression-triage-and-issue-faq-synthesis-workflow.md",
@@ -176,7 +182,7 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 32,
+  "unit_count": 33,
   "units": [
     {
       "category": "sop",
@@ -1202,6 +1208,57 @@
           "impact-mapper",
           "migration-generator",
           "patch-series"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "repository": "Ascend/MindIE-SD",
+        "revision": "9fe772dfb90696e21b5e5d4e92ca07dffab84cf4"
+      },
+      "domain_path": "orchestration/mindie-sd-auto-opt/s0-s6-workflow",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
+      "inherits_from": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
+        "unit-superpowers-claim-evidence-scope",
+        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
+      ],
+      "path": "orchestration/mindie-sd-auto-opt/s0-s6-workflow/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/model-auto-optimization/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/README.md"
+        ],
+        "source_digest": "6a6619b9bd6692cddcd65cce94ca48bd254fbc53eb82ff5f6e938dfdcea17813",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/model-auto-optimization/SKILL.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD model-auto-optimization S0-S6 stage-gated orchestration, multi-agent fan-out, dual-report lint, and kb_lint workflow",
+      "token_estimate": 1132,
+      "triggers": {
+        "error_signatures": [
+          "stage_gate.py --stage close fails due to missing overview_report.md or detail_report.md",
+          "report_lint.py rejects un-anchored estimates on baseline/recommended/triad rows",
+          "kb_lint.py rejects duplicated thresholds or un-scoped raw wall-clock numbers in skill prose"
+        ],
+        "keywords": [
+          "model-auto-optimization",
+          "stage_gate",
+          "report_lint",
+          "audit_report",
+          "kb_lint",
+          "post-enable-review",
+          "seam_check",
+          "run-state"
         ]
       }
     },

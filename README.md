@@ -12,7 +12,7 @@
   <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/MindIE%20Agent-Ecosystem-7045f5.svg" alt="MindIE Agent"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/Schema-mindie--graded--unit%2F1-0f766e.svg" alt="Schema mindie-graded-unit/1"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/domain-agent--engineering-0284c7.svg" alt="Domain agent-engineering"></a>
-  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-23%20Units-d97757.svg" alt="23 Graded Units"></a>
+  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-33%20Units-d97757.svg" alt="33 Graded Units"></a>
   <a href="./index/shard-topology.json"><img src="https://img.shields.io/badge/Levels-L1%20to%20L4-10a37f.svg" alt="Levels L1-L4"></a>
 </p>
 
@@ -79,11 +79,11 @@
 
 ## 🏗️ 领域全景与 L1–L4 分级架构
 
-本仓库承载 MindIE Agent 的 **`agent-engineering` 领域分级知识源**（共 **23 个分级知识单元**：`L1: 5`、`L2: 11`、`L3: 6`、`L4: 1`）。聚焦面向昇腾 NPU 的 AI Coding Agent 工程体系建设：涵盖多智能体并发 NPU 设备/端口/Worktree 原子租约隔离、远端 NPU 容器受限补丁验证、Harness 事件驱动 DAG 状态机与回滚取证、优化停滞触发的去偏置子上下文探索（RSI）、单扼流点线级凭据脱敏（`cpx`）与轨迹合规审计（`sift` / `insight`）、OKF 知识包溯源与算子知识卡治理，以及 CANN-Bench HAP 防刷分评测门禁。
+本仓库承载 MindIE Agent 的 **`agent-engineering` 领域分级知识源**（共 **33 个分级知识单元**：`L1: 5`、`L2: 15`、`L3: 12`、`L4: 1`）。聚焦面向昇腾 NPU 的 AI Coding Agent 工程体系建设：涵盖多智能体并发 NPU 设备/端口/Worktree 原子租约隔离、远端 NPU 容器受限补丁验证、Harness 事件驱动 DAG 状态机与回滚取证、优化停滞触发的去偏置子上下文探索（RSI）、单扼流点线级凭据脱敏（`cpx`）与轨迹合规审计（`sift` / `insight`）、OKF 知识包溯源与算子知识卡治理，以及 CANN-Bench HAP 防刷分评测门禁。
 
 ### 1. `mindie-graded-unit/1` 四级知识单元体系（L1–L4）
 
-本知识库拒绝碎片化的聊天摘要或脱离前提的“万能经验”，所有知识单元均按工程抽象粒度与可操作性划分为 **L1–L4 四个层级**（当前分布：**L1: 5 · L2: 11 · L3: 6 · L4: 1**）：
+本知识库拒绝碎片化的聊天摘要或脱离前提的“万能经验”，所有知识单元均按工程抽象粒度与可操作性划分为 **L1–L4 四个层级**（当前分布：**L1: 5 · L2: 15 · L3: 12 · L4: 1**）：
 
 | 层级 | 标准类别 (`category`) | 工程定位 | 核心内容与准入要求 |
 | :---: | --- | --- | --- |
@@ -98,7 +98,7 @@
 flowchart LR
   Agent["🤖 AI Coding Agent (Claude Code / Codex / Kimi / DSH)"]
   Query["🔎 knowledge_query (查询词 + 实测环境条件)"]
-  Manifest["📋 index/routing-manifest.json (23 个单元元数据 · 条件与继承闭包)"]
+  Manifest["📋 index/routing-manifest.json (33 个单元元数据 · 条件与继承闭包)"]
   Topology["🗂️ index/shard-topology.json (子领域分片拓扑 · L1-L4 统计)"]
   Match{"⚖️ 条件匹配引擎 (matched / mismatch / condition_unknown)"}
   Explain["📖 knowledge_explain (按精确修订号 @revision 精读)"]
@@ -115,17 +115,17 @@ flowchart LR
 
 ## 📊 子领域分布与代表性知识单元
 
-[`index/routing-manifest.json`](./index/routing-manifest.json) 与 [`index/shard-topology.json`](./index/shard-topology.json) 是由全量 Markdown 单元派生的权威实时清单。当前仓库共包含 **23 个分级知识单元**（**L1: 5 · L2: 11 · L3: 6 · L4: 1**）：
+[`index/routing-manifest.json`](./index/routing-manifest.json) 与 [`index/shard-topology.json`](./index/shard-topology.json) 是由全量 Markdown 单元派生的权威实时清单。当前仓库共包含 **33 个分级知识单元**（**L1: 5 · L2: 15 · L3: 12 · L4: 1**）：
 
 ### 1. 子领域（Subdomain）分布统计
 
 | 子领域目录 | 单元数量 | 层级分布 (`L1–L4`) | 核心覆盖范围 |
 | --- | :---: | :---: | --- |
-| `engineering` | **9** | `L1: 1, L2: 6, L3: 2` | 多智能体 NPU 设备/端口/Worktree 原子租约公理、远端 NPU 容器增量验证 SOP、完成声明与可观测证据范围匹配、并行调查独立性划分、Git 范围绑定 Code Review 与去偏置子上下文探索工作流 |
-| `governance` | **4** | `L1: 2, L2: 2` | OKF v0.2 路径配置、40-Hex Commit 溯源绑定与正交信任层公理、昇腾标识符子词分词（CamelCase/snake_case）公理、AscendC VV/CV 算子卡检查表与声明式检索评测（Recall-at-K / MRR / 零泄漏门禁）SOP |
-| `orchestration` | **4** | `L3: 3, L4: 1` | Harness 事件驱动 DAG 状态机与审批门禁工作流、CoW 快照恢复与四段式回滚取证工作流、跨十类算子族的受控代码扰动进化策略工作流及 AscendC 五大高收益 Kernel Mutator |
+| `engineering` | **11** | `L1: 1, L2: 7, L3: 3` | 多智能体 NPU 设备/端口/Worktree 原子租约公理、远端 NPU 容器增量验证、自动 Bug 根因定位（E001–E004）与风险单测生成、CANN-Bench HAP 评分与批量编译门禁、`msverl` 每日 CI 回归分诊、Sentry 三工具协同工作流及去偏置子上下文探索工作流 |
+| `orchestration` | **9** | `L3: 8, L4: 1` | Harness 事件驱动 DAG 状态机与审批门禁、CoW 快照恢复与四段式回滚取证、CANN 七阶段四角色模型推理调优与 SOTA 探索自循环、`MindIE-SD` S0–S6 自动调优与 `kb_lint`、`msagent` 量化调优编排、Megatron-to-MindSpeed 迁移及 AscendC 五大高收益 Kernel Mutator |
+| `governance` | **6** | `L1: 2, L2: 4` | OKF v0.2 路径配置、40-Hex Commit 溯源绑定与正交信任层公理、昇腾标识符子词分词（CamelCase/snake_case）公理、AscendC VV/CV 算子卡检查表、`msagent` 双层最小权限过滤、Agent Skill 六步安全审计及声明式检索评测（Recall-at-K / MRR / 零泄漏门禁）SOP |
 | `audit` | **4** | `L1: 1, L2: 2, L3: 1` | `cpx` 单扼流点线级脱敏（`dispatchEmit`）与零残留注入公理、多协议 SSE 重组与 `.jsonl.7z` 归档 SOP、`sift` 五态合规判定与结果-过程校准 SOP 及 `insight` 六泳道阶段归因与 Skill 消融工作流 |
-| `evaluation` | **2** | `L1: 1, L2: 1` | CANN-Bench 硬件锚定性能（HAP）指标饱和特性与五级课程公理，以及七项防刷分守卫（SUB-BEH-001..007）与 TaskUnit 局部恢复重试 SOP |
+| `evaluation` | **3** | `L1: 1, L2: 2` | CANN-Bench 硬件锚定性能（HAP）指标饱和特性与五级课程公理、七项防刷分守卫（SUB-BEH-001..007）与 TaskUnit 局部恢复重试 SOP，以及 AISBench 评测集 RBF 核 Herding 隐状态核心集压缩 SOP |
 
 ### 2. 代表性分级知识单元（Representative Units）
 
@@ -143,6 +143,7 @@ flowchart LR
 | [`unit-controlled-code-perturbation-and-evolution-strategy-workflow`](./orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md) | `orchestration` | **L3** / `workflow` | Controlled Code Perturbation Across Ten Operator Families and Evolutionary Strategy Promotion Workflow | `mindie://agent-engineering/units/unit-controlled-code-perturbation-and-evolution-strategy-workflow@1` |
 | [`unit-insight-six-swimlane-attribution-and-skill-ablation-workflow`](./audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md) | `audit` | **L3** / `workflow` | cannbot-insight Six-Swimlane Phase Attribution, Six-Dimension Scorecard, and A/B Skill Ablation Workflow | `mindie://agent-engineering/units/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow@1` |
 | [`unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator`](./orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md) | `orchestration` | **L4** / `mutator` | Ascend C Five High-Yield Kernel Mutators: UB Vector Chain, Custom PingPong, Matmul IBShare, L0 Capacity Guard, and Multi-Launch GM Barrier | `mindie://agent-engineering/units/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator@1` |
+| [`unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow`](./orchestration/mindie-sd-auto-opt/s0-s6-workflow/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md) | `orchestration` | **L3** / `workflow` | MindIE-SD S0-S6 end-to-end diffusion model auto-optimization state machine, compound verification, and kb-lint governance workflow | `mindie://agent-engineering/units/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow@1` |
 
 ---
 
@@ -156,6 +157,7 @@ knowledge-agent-engineering/
 ├── AGENTS.md                           # 维护者与 AI Agent 仓库操作边界规范
 ├── README.md                           # 中文主文档
 ├── README.en.md                        # 英文主文档 (English Documentation)
+├── LICENSE                             # 双许可声明 (CC BY 4.0 语料与文档 + MIT 维护脚本)
 ├── index/
 │   ├── routing-manifest.json           # [派生索引] 全量单元 ID、路径、层级、条件、继承闭包与 Token 估算
 │   └── shard-topology.json             # [派生索引] 子领域分片计数与层级拓扑
@@ -183,10 +185,19 @@ knowledge-agent-engineering/
 - **主仓库与一键安装入口**：[`mindie-agent/mindie-agent`](https://github.com/mindie-agent/mindie-agent)
 - **知识检索与隐私脱敏运行时**：[`mindie-agent/knowledge`](https://github.com/mindie-agent/knowledge)（Python 包 `mindie-knowledge`）
 - **七大公开领域知识库矩阵**：
-  - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` 适配、图编译、MoE 与 PD 分离（43 Units）
-  - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang 算子开发与优化（87 Units）
-  - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — 核心推理引擎调度、KV Cache、多流并行与服务化架构（78 Units）
-  - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL 集合通信、RoCE/HCCS 拓扑、多维并行与 SHMEM（23 Units）
-  - [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) — CANN 故障诊断、`msprof` 性能剖析与精度验证（23 Units）
-  - [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) — GE/TorchAir 图编译、自定义算子注册与 CUDA 迁移兼容（22 Units）
-  - [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) — 智能体编排、远端 NPU 租约协同、脱敏审计与基准评测（23 Units）
+  - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` 与 `vLLM-Omni` 适配、图编译、MoE、PD 分离与多阶段全模态流水线（91 Units）
+  - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang / MindIE-SD 算子开发与优化（105 Units）
+  - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — 核心推理引擎调度、KV Cache、`MindIE-SD` 扩散加速与服务化架构（109 Units）
+  - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL 集合通信、RoCE/HCCS 拓扑、Ulysses/Ring/CFG 混合并行与 SHMEM（39 Units）
+  - [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) — CANN 故障诊断、`msprof` 性能剖析与 A/B/A 性能/精度门禁（39 Units）
+  - [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) — GE/TorchAir/Inductor 图编译、自定义算子注册与两阶段框架集成（34 Units）
+  - [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) — 智能体编排、S0–S6 自动调优工作流、脱敏审计与基准评测（33 Units）
+
+---
+
+## 📄 开源许可（License）
+
+本仓库遵循 [`LICENSE`](./LICENSE) 双许可声明（与 `mindie-publication-contract/2` 仓库结构对齐）：
+
+- **知识语料、派生索引、公开反馈与文档证据**（`<domain_path>/unit-*.md`、`index/`、`feedback/`、`README.md`、`README.en.md`、`AGENTS.md`、`docs/`）采用 **[Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE)** 许可协议。
+- **仓库维护脚本与工作流配置**（`scripts/`、`.github/workflows/`、`publication-contract.json`）采用 **[MIT License](./LICENSE)** 许可协议。

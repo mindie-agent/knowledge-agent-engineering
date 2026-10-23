@@ -12,7 +12,7 @@
   <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/MindIE%20Agent-Ecosystem-7045f5.svg" alt="MindIE Agent"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/Schema-mindie--graded--unit%2F1-0f766e.svg" alt="Schema mindie-graded-unit/1"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/domain-agent--engineering-0284c7.svg" alt="Domain agent-engineering"></a>
-  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-23%20Units-d97757.svg" alt="23 Graded Units"></a>
+  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-33%20Units-d97757.svg" alt="33 Graded Units"></a>
   <a href="./index/shard-topology.json"><img src="https://img.shields.io/badge/Levels-L1%20to%20L4-10a37f.svg" alt="Levels L1-L4"></a>
 </p>
 
@@ -79,11 +79,11 @@ Once installed, the native host plugin connects to the [`mindie-knowledge`](http
 
 ## 🏗️ Domain Overview & L1–L4 Graded Architecture
 
-This repository hosts the **`agent-engineering` graded domain knowledge corpus** for MindIE Agent (**23 graded units**: `L1: 5`, `L2: 11`, `L3: 6`, `L4: 1`). It focuses on AI Coding Agent engineering for Ascend NPUs: atomic multi-agent NPU device/port/worktree lease isolation, bounded remote NPU container patching and verification, event-driven Harness DAG state machines and rollback forensics, stagnation-triggered de-biased subcontext exploration (RSI), single-chokepoint wire-level credential redaction (`cpx`) and trajectory compliance auditing (`sift` / `insight`), OKF provenance & operator card governance, and CANN-Bench HAP anti-reward-hacking evaluation gates.
+This repository hosts the **`agent-engineering` graded domain knowledge corpus** for MindIE Agent (**33 graded units**: `L1: 5`, `L2: 15`, `L3: 12`, `L4: 1`). It focuses on AI Coding Agent engineering for Ascend NPUs: atomic multi-agent NPU device/port/worktree lease isolation, bounded remote NPU container patching and verification, event-driven Harness DAG state machines and rollback forensics, stagnation-triggered de-biased subcontext exploration (RSI), single-chokepoint wire-level credential redaction (`cpx`) and trajectory compliance auditing (`sift` / `insight`), OKF provenance & operator card governance, and CANN-Bench HAP anti-reward-hacking evaluation gates.
 
 ### 1. The `mindie-graded-unit/1` L1–L4 Hierarchy
 
-Instead of lossy chat summaries or unconditioned "best practices", every knowledge unit in this repository is structured into **four graded levels (L1–L4)** based on engineering abstraction and actionability (current breakdown: **L1: 5 · L2: 11 · L3: 6 · L4: 1**):
+Instead of lossy chat summaries or unconditioned "best practices", every knowledge unit in this repository is structured into **four graded levels (L1–L4)** based on engineering abstraction and actionability (current breakdown: **L1: 5 · L2: 15 · L3: 12 · L4: 1**):
 
 | Level | Canonical Category (`category`) | Role | Scope & Admission Requirements |
 | :---: | --- | --- | --- |
@@ -98,7 +98,7 @@ Instead of lossy chat summaries or unconditioned "best practices", every knowled
 flowchart LR
   Agent["🤖 AI Coding Agent (Claude Code / Codex / Kimi / DSH)"]
   Query["🔎 knowledge_query (Query text + observed conditions)"]
-  Manifest["📋 index/routing-manifest.json (23 units · condition predicates · inheritance)"]
+  Manifest["📋 index/routing-manifest.json (33 units · condition predicates · inheritance)"]
   Topology["🗂️ index/shard-topology.json (Subdomain shards · L1-L4 counts)"]
   Match{"⚖️ Condition Matcher (matched / mismatch / condition_unknown)"}
   Explain["📖 knowledge_explain (Read pinned unit @revision)"]
@@ -115,17 +115,17 @@ flowchart LR
 
 ## 📊 Subdomain Breakdown & Representative Units
 
-[`index/routing-manifest.json`](./index/routing-manifest.json) and [`index/shard-topology.json`](./index/shard-topology.json) are the authoritative derived inventories rebuilt from the Markdown units. This repository currently contains **23 graded knowledge units** (**L1: 5 · L2: 11 · L3: 6 · L4: 1**):
+[`index/routing-manifest.json`](./index/routing-manifest.json) and [`index/shard-topology.json`](./index/shard-topology.json) are the authoritative derived inventories rebuilt from the Markdown units. This repository currently contains **33 graded knowledge units** (**L1: 5 · L2: 15 · L3: 12 · L4: 1**):
 
 ### 1. Subdomain Statistics
 
 | Subdomain | Units | Level Breakdown (`L1–L4`) | Core Engineering Scope |
 | --- | :---: | :---: | --- |
-| `engineering` | **9** | `L1: 1, L2: 6, L3: 2` | Multi-agent NPU device/port/worktree atomic lease axioms, remote NPU container verification SOP, claim-evidence scope matching, parallel investigation partitioning, Git-range review binding, and de-biased subcontext exploration workflows |
-| `governance` | **4** | `L1: 2, L2: 2` | OKF v0.2 path profiles, 40-hex commit provenance & orthogonal trust-tier axioms, Ascend identifier subword tokenization axioms, AscendC VV/CV operator card checklists, and declarative retrieval evaluation (Recall-at-K / MRR / zero-leak gate) SOP |
-| `orchestration` | **4** | `L3: 3, L4: 1` | Harness event-driven DAG state machine & approval gate workflow, CoW snapshot recovery & rollback forensics workflow, controlled code perturbation evolutionary workflow, and five high-yield AscendC kernel mutators |
+| `engineering` | **11** | `L1: 1, L2: 7, L3: 3` | Multi-agent NPU device/port/worktree atomic lease axioms, remote NPU container verification, automated bug root-cause bisect (E001–E004) & test generation, CANN-Bench HAP scoring & batch compile gate, `msverl` daily CI regression triage, Sentry triad workflow, and de-biased subcontext exploration workflow |
+| `orchestration` | **9** | `L3: 8, L4: 1` | Harness event-driven DAG state machine & approval gate, CoW snapshot recovery & rollback forensics, CANN seven-stage four-role model optimization & SOTA exploratory loops, `MindIE-SD` S0–S6 auto-optimization & `kb_lint`, `msagent` quant tuning, Megatron-to-MindSpeed migration, and five high-yield AscendC kernel mutators |
+| `governance` | **6** | `L1: 2, L2: 4` | OKF v0.2 path profiles, 40-hex commit provenance & orthogonal trust-tier axioms, Ascend identifier subword tokenization axioms, AscendC VV/CV operator card checklists, `msagent` two-layer least-privilege filter, six-step Skill security auditing, and declarative retrieval evaluation (Recall-at-K / MRR / zero-leak gate) SOP |
 | `audit` | **4** | `L1: 1, L2: 2, L3: 1` | `cpx` single-chokepoint wire redaction (`dispatchEmit`) & zero-residue axioms, multi-protocol SSE reassembly & `.jsonl.7z` archive SOP, `sift` five-state compliance calibration SOP, and `insight` six-swimlane attribution & skill ablation workflow |
-| `evaluation` | **2** | `L1: 1, L2: 1` | CANN-Bench Hardware-Anchored Performance (HAP) metric saturation & five-level curriculum axioms, and seven anti-reward-hacking guards (SUB-BEH-001..007) with TaskUnit retry SOP |
+| `evaluation` | **3** | `L1: 1, L2: 2` | CANN-Bench Hardware-Anchored Performance (HAP) metric saturation & five-level curriculum axioms, seven anti-reward-hacking guards (SUB-BEH-001..007) with TaskUnit retry SOP, and AISBench RBF kernel herding coreset compression SOP |
 
 ### 2. Representative Graded Knowledge Units
 
@@ -143,6 +143,7 @@ flowchart LR
 | [`unit-controlled-code-perturbation-and-evolution-strategy-workflow`](./orchestration/harness-and-evolution/code-perturbation-and-rsi/evolutionary-strategy-discovery/unit-controlled-code-perturbation-and-evolution-strategy-workflow.md) | `orchestration` | **L3** / `workflow` | Controlled Code Perturbation Across Ten Operator Families and Evolutionary Strategy Promotion Workflow | `mindie://agent-engineering/units/unit-controlled-code-perturbation-and-evolution-strategy-workflow@1` |
 | [`unit-insight-six-swimlane-attribution-and-skill-ablation-workflow`](./audit/sentry-sift-insight/trajectory-compliance-and-swimlanes/insight-swimlanes-and-ablation/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow.md) | `audit` | **L3** / `workflow` | cannbot-insight Six-Swimlane Phase Attribution, Six-Dimension Scorecard, and A/B Skill Ablation Workflow | `mindie://agent-engineering/units/unit-insight-six-swimlane-attribution-and-skill-ablation-workflow@1` |
 | [`unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator`](./orchestration/harness-and-evolution/code-perturbation-and-rsi/ascendc-kernel-mutators/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator.md) | `orchestration` | **L4** / `mutator` | Ascend C Five High-Yield Kernel Mutators: UB Vector Chain, Custom PingPong, Matmul IBShare, L0 Capacity Guard, and Multi-Launch GM Barrier | `mindie://agent-engineering/units/unit-ascendc-pingpong-l1-reuse-and-vector-chain-fusion-mutator@1` |
+| [`unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow`](./orchestration/mindie-sd-auto-opt/s0-s6-workflow/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md) | `orchestration` | **L3** / `workflow` | MindIE-SD S0-S6 end-to-end diffusion model auto-optimization state machine, compound verification, and kb-lint governance workflow | `mindie://agent-engineering/units/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow@1` |
 
 ---
 
@@ -156,6 +157,7 @@ knowledge-agent-engineering/
 ├── AGENTS.md                           # Maintainer and AI-Agent repository boundary rules
 ├── README.md                           # Primary documentation (Chinese)
 ├── README.en.md                        # Primary documentation (English)
+├── LICENSE                             # Dual license (CC BY 4.0 corpus & docs + MIT scripts)
 ├── index/
 │   ├── routing-manifest.json           # [Derived Index] Live unit IDs, paths, tiers, conditions, inheritance & token estimates
 │   └── shard-topology.json             # [Derived Index] Subdomain shard counts and level topology
@@ -183,10 +185,19 @@ Every push and pull request targeting `main` is enforced by `.github/workflows/c
 - **Main Repository & One-Line Installer**: [`mindie-agent/mindie-agent`](https://github.com/mindie-agent/mindie-agent)
 - **Knowledge Runtime & Redaction Engine**: [`mindie-agent/knowledge`](https://github.com/mindie-agent/knowledge) (`mindie-knowledge`)
 - **The 7 Public Domain Knowledge Corpora**:
-  - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` model bring-up, ACLGraph, MoE & PD disaggregation (43 Units)
-  - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang operator development & optimization (87 Units)
-  - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — Core inference engine scheduling, KV cache, multi-stream overlap & serving (78 Units)
-  - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL collectives, RoCE/HCCS topology, hybrid parallelism & SHMEM (23 Units)
-  - [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) — CANN fault diagnostics, `msprof` profiling & accuracy validation (23 Units)
-  - [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) — GE/TorchAir graph compilation, custom-op registration & CUDA migration (22 Units)
-  - [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) — Multi-agent orchestration, NPU lease coordination, redaction audit & benchmarking (23 Units)
+  - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` & `vLLM-Omni` model bring-up, ACLGraph, MoE, PD disaggregation & omni pipelines (91 Units)
+  - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang / MindIE-SD operator development & optimization (105 Units)
+  - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — Core inference engine scheduling, KV cache, `MindIE-SD` DiT acceleration & serving (109 Units)
+  - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL collectives, RoCE/HCCS topology, Ulysses/Ring/CFG hybrid parallelism & SHMEM (39 Units)
+  - [`knowledge-infer-observability`](https://github.com/mindie-agent/knowledge-infer-observability) — CANN fault diagnostics, `msprof` profiling & Window A/B/A perf/accuracy gates (39 Units)
+  - [`knowledge-infer-ops-compat`](https://github.com/mindie-agent/knowledge-infer-ops-compat) — GE/TorchAir/Inductor graph compilation, custom-op registration & two-stage integration (34 Units)
+  - [`knowledge-agent-engineering`](https://github.com/mindie-agent/knowledge-agent-engineering) — Multi-agent orchestration, S0–S6 auto-optimization, redaction audit & benchmarking (33 Units)
+
+---
+
+## 📄 License
+
+This repository is dual-licensed under [`LICENSE`](./LICENSE) in alignment with the `mindie-publication-contract/2` repository layout:
+
+- **Knowledge Corpus, Derived Indexes, Public Feedback & Documentation** (`<domain_path>/unit-*.md`, `index/`, `feedback/`, `README.md`, `README.en.md`, `AGENTS.md`, `docs/`) are licensed under **[Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE)**.
+- **Repository Maintenance Scripts & Workflow Configuration** (`scripts/`, `.github/workflows/`, `publication-contract.json`) are licensed under the **[MIT License](./LICENSE)**.
