@@ -96,11 +96,6 @@
       "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
       "unit-superpowers-review-request-git-range"
     ],
-    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": [
-      "unit-multi-agent-npu-lease-and-container-isolation-axioms",
-      "unit-superpowers-claim-evidence-scope",
-      "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
-    ],
     "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": [
       "unit-multi-agent-npu-lease-and-container-isolation-axioms",
       "unit-superpowers-claim-evidence-scope",
@@ -145,8 +140,8 @@
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 196190,
-      "estimated_tokens": 35095,
+      "bytes": 190118,
+      "estimated_tokens": 33963,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
@@ -170,7 +165,6 @@
         "unit-harness-workflow-orchestrator-approval-and-rollback-advice-sop",
         "unit-insight-six-swimlane-attribution-and-skill-ablation-workflow",
         "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow",
-        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
         "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow",
         "unit-msagent-tool-skill-two-layer-filter-and-least-privilege-sop",
         "unit-msverl-regression-triage-and-issue-faq-synthesis-workflow",
@@ -184,7 +178,7 @@
         "unit-superpowers-parallel-investigation-independence",
         "unit-superpowers-review-request-git-range"
       ],
-      "units": 33
+      "units": 32
     },
     "domains": [
       {
@@ -261,8 +255,8 @@
       },
       {
         "automatic": false,
-        "bytes": 52900,
-        "estimated_tokens": 9472,
+        "bytes": 46828,
+        "estimated_tokens": 8340,
         "exceeds": [],
         "kind": "federation",
         "path": "orchestration",
@@ -275,14 +269,13 @@
           "unit-harness-rollback-advice-forensics-and-history-recovery-workflow",
           "unit-harness-workflow-dag-state-machine-and-approval-gate-workflow",
           "unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow",
-          "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
           "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow"
         ],
-        "units": 9
+        "units": 8
       }
     ]
   },
-  "index_build_elapsed_ms": 18.735457997536287,
+  "index_build_elapsed_ms": 18.12066708225757,
   "leaves": [
     {
       "automatic": false,
@@ -676,19 +669,6 @@
     },
     {
       "automatic": false,
-      "bytes": 6072,
-      "estimated_tokens": 1132,
-      "exceeds": [],
-      "kind": "leaf",
-      "path": "orchestration/mindie-sd-auto-opt/s0-s6-workflow",
-      "recommended_action": "review_leaf_split",
-      "unit_ids": [
-        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow"
-      ],
-      "units": 1
-    },
-    {
-      "automatic": false,
       "bytes": 5937,
       "estimated_tokens": 1129,
       "exceeds": [],
@@ -1024,19 +1004,6 @@
     },
     {
       "automatic": false,
-      "bytes": 6072,
-      "estimated_tokens": 1132,
-      "exceeds": [],
-      "kind": "subtree",
-      "path": "orchestration/mindie-sd-auto-opt",
-      "recommended_action": "review_two_level_subtree_split",
-      "unit_ids": [
-        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow"
-      ],
-      "units": 1
-    },
-    {
-      "automatic": false,
       "bytes": 5937,
       "estimated_tokens": 1129,
       "exceeds": [],
@@ -1062,7 +1029,7 @@
       "units": 1
     }
   ],
-  "unit_count": 33,
+  "unit_count": 32,
   "units": {
     "unit-aisbench-rbf-kernel-herding-coreset-compression-sop": {
       "bytes": 4567,
@@ -1328,20 +1295,6 @@
         "unit-superpowers-review-request-git-range"
       ],
       "path": "orchestration/upstream-migration/megatron-to-mindspeed/change-event-impact-map-and-patch-package/unit-megatron-to-mindspeed-change-analysis-and-patch-package-workflow.md",
-      "tier": "L3"
-    },
-    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": {
-      "bytes": 6072,
-      "category": "workflow",
-      "content_sha256": "7e85ba3c5cd3501b0f090363764b6e9bdf745872443e4dfacf0fdae24da73f88",
-      "domain_path": "orchestration/mindie-sd-auto-opt/s0-s6-workflow",
-      "estimated_tokens": 1132,
-      "evidence_strength": "software_contract",
-      "inherits_from": [
-        "unit-multi-agent-npu-lease-and-container-isolation-axioms",
-        "unit-okf-v02-bundle-profiles-provenance-and-trust-tier-axioms"
-      ],
-      "path": "orchestration/mindie-sd-auto-opt/s0-s6-workflow/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
       "tier": "L3"
     },
     "unit-msagent-quant-tuning-orchestrator-io-v1-and-coreset-workflow": {
